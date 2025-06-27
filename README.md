@@ -1,5 +1,7 @@
 # crafterlib
 
+[![Python tests](https://github.com/JFarNTIG/crafterlib/actions/workflows/ci.yml/badge.svg)](https://github.com/JFarNTIG/crafterlib/actions/workflows/ci.yml)
+
 Copyright (C) 2025 Jacob Farnsworth
 
 Have you ever played a game with some kind of crafting system? Have you ever found yourself struggling to plan your crafting goals in such a game? Maybe you've wondered, "How much stone do I need to make 1000 slabs?" or "How many sticks and ingots do I need to make 4 pickaxes?"
