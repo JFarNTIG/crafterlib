@@ -36,4 +36,4 @@ where = ["src"]
 include = ["crafterlib*"]
 
 [tool.setuptools.package-data]
-"crafterlib.data" = ["*.json"]
+"crafterlib.data" = ["games/**/*.json"]

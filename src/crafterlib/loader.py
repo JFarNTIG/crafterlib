@@ -41,7 +41,7 @@ def load_data_for_game(
     if root_dir is not None:
         subdir = Path(root_dir) / "games/" / game
     else:
-        subdir = resources.files("crafterlib.data").joinpath("games/") / game
+        subdir = resources.files("crafterlib").joinpath("data", "games", game)
 
     if not subdir.is_dir():
         raise NotADirectoryError(f"No data folder for game {game}")
