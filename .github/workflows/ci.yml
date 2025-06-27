@@ -1,12 +1,17 @@
 name: Python tests
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     types: [labeled]
 
 jobs:
   test:
-    if: github.event.label.name == 'ready-for-review'
+    if: github.event_name == 'push' ||
+        (github.event_name == 'pull_request' &&
+         github.event.label.name == 'ready-for-review')
     runs-on: ubuntu-24.04
 
     strategy:
