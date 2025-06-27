@@ -2,13 +2,13 @@
 
 SPDX-License-Identifier: MIT
 """
-from typing import Dict, List, Iterable
+from typing import Dict, List, Iterable, Optional
 import math
 import networkx as nx
 from crafterlib import Recipe
 
 class ItemGraph:
-    def __init__(self, graph: nx.DiGraph = None):
+    def __init__(self, graph: Optional[nx.DiGraph] = None):
         self.graph: nx.DiGraph = graph if graph else nx.DiGraph()
 
     def add_items(self, items: Iterable[str]):

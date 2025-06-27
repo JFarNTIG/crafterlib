@@ -8,7 +8,7 @@ from crafterlib import GameCraftingData
 def get_amount_craftable_with(game_data: GameCraftingData,
                               ingredients: Dict[str, float],
                               product: str,
-                              recursive: True = False) -> float:
+                              recursive: bool = False) -> float:
     """Determine the maximum amount of a certain product that can be
     crafted with a set of available ingredients.
 

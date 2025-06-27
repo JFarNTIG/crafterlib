@@ -29,15 +29,15 @@ class Recipe:
         self,
         id: int,
         category: str,
-        requirements: Dict[str, float] | None = None,
-        ingredients: Dict[str, float] | None = None,
-        products: Dict[str, float] | None = None,
+        requirements: Dict[str, float] = {},
+        ingredients: Dict[str, float] = {},
+        products: Dict[str, float] = {},
     ) -> None:
         self.id: int = id
         self.category: str = category
-        self.requirements: Dict[str, float] = requirements or {}
-        self.ingredients: Dict[str, float] = ingredients or {}
-        self.products: Dict[str, float] = products or {}
+        self.requirements: Dict[str, float] = requirements
+        self.ingredients: Dict[str, float] = ingredients
+        self.products: Dict[str, float] = products
     
     def has_ingredient(self, ingredient: str) -> bool:
         return ingredient in self.ingredients

@@ -5,6 +5,7 @@ SPDX-License-Identifier: MIT
 import importlib.resources as resources
 import json
 from pathlib import Path
+from types import NoneType
 from typing import Dict
 
 from crafterlib.recipe import Recipe
@@ -15,7 +16,7 @@ _crafting_data_cache: Dict[str, GameCraftingData] = {}
 
 def load_data_for_game(
     game: str,
-    root_dir: str | Path | None = None,
+    root_dir: str | Path | NoneType = None,
 ) -> GameCraftingData:
     """Load item and crafting data for the specified game.
 
