@@ -1,0 +1,9 @@
+{
+    "game": "Very advanced items",
+    "item_files": [
+        "items.json"
+    ],
+    "recipe_files": [
+        "recipes.json"
+    ]
+}

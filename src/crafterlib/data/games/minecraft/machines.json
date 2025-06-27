@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Furnace",
+        "sources": [
+            "Crafting"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Crafting Table",
+        "sources": [
+            "Crafting"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Silica Sand": 36
+        },
+        "products": {
+            "Silicon": 1
+        }
+    },
+    {
+        "id": 2,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Silicon": 2
+        },
+        "products": {
+            "Polysilicon": 1
+        }
+    },
+    {
+        "id": 3,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Polysilicon": 3
+        },
+        "products": {
+            "Silicon Wafers": 2
+        }
+    },
+    {
+        "id": 4,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Silicon Wafers": 3
+        },
+        "products": {
+            "Integrated Circuit": 1
+        }
+    },
+    {
+        "id": 5,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Integrated Circuit": 4
+        },
+        "products": {
+            "Electronics Module": 1
+        }
+    },
+    {
+        "id": 6,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Electronics Module": 7
+        },
+        "products": {
+            "Computer": 1
+        }
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Flour": 2,
+            "Water": 2
+        },
+        "products": {
+            "Dough": 1
+        }
+    },
+    {
+        "id": 2,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Meat": 1,
+            "Salt": 3
+        },
+        "products": {
+            "Pepperoni": 4
+        }
+    },
+    {
+        "id": 3,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Milk": 3,
+            "Vinegar": 1
+        },
+        "products": {
+            "Cheese": 2
+        }
+    },
+    {
+        "id": 4,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Tomato": 4,
+            "Basil": 1
+        },
+        "products": {
+            "Pizza Sauce": 1
+        }
+    },
+    {
+        "id": 5,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Pizza Sauce": 1,
+            "Pepperoni": 2,
+            "Dough": 2,
+            "Cheese": 4
+        },
+        "products": {
+            "Pepperoni Pizza": 1
+        }
+    }
+]

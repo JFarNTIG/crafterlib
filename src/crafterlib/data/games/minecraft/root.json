@@ -1,0 +1,11 @@
+{
+    "game": "Minecraft",
+    "item_files": [
+        "resources.json",
+        "tools.json",
+        "machines.json"
+    ],
+    "recipe_files": [
+        "recipes.json"
+    ]
+}

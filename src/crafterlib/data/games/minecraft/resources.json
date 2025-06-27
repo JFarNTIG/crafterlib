@@ -1,0 +1,103 @@
+[
+    {
+        "id": 101,
+        "name": "Dirt",
+        "sources": [
+            "Digging"
+        ]
+    },
+    {
+        "id": 102,
+        "name": "Sand",
+        "sources": [
+            "Digging"
+        ]
+    },
+    {
+        "id": 103,
+        "name": "Cobblestone",
+        "sources": [
+            "Mining"
+        ]
+    },
+    {
+        "id": 104,
+        "name": "Coal",
+        "sources": [
+            "Mining"
+        ],
+        "requirements": [
+            "Wood Pickaxe"
+        ]
+    },
+    {
+        "id": 105,
+        "name": "Stone",
+        "sources": [
+            "Smelting"
+        ]
+    },
+    {
+        "id": 106,
+        "name": "Planks",
+        "sources": [
+            "Crafting"
+        ]
+    },
+    {
+        "id": 107,
+        "name": "Logs",
+        "sources": [
+            "Woodcutting"
+        ]
+    },
+    {
+        "id": 108,
+        "name": "Sticks",
+        "sources": [
+            "Crafting"
+        ]
+    },
+    {
+        "id": 109,
+        "name": "Raw Iron",
+        "sources": [
+            "Mining"
+        ],
+        "requirements": [
+            "Stone Pickaxe"
+        ]
+    },
+    {
+        "id": 110,
+        "name": "Iron Ingot",
+        "sources": [
+            "Smelting"
+        ]
+    },
+    {
+        "id": 111,
+        "name": "Gold Ingot",
+        "sources": [
+            "Smelting"
+        ]
+    },
+    {
+        "id": 112,
+        "name": "Raw Gold",
+        "sources": [
+            "Mining"
+        ],
+        "requirements": [
+            "Iron Pickaxe"
+        ]
+    },
+    {
+        "id": 113,
+        "name": "Torch",
+        "sources": [
+            "Crafting"
+        ],
+        "requirements": []
+    }
+]

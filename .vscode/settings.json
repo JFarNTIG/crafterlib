@@ -1,0 +1,12 @@
+{
+    // https://code.visualstudio.com/docs/python/testing#_pytest-configuration-settings
+    // pytest-cov causes some problems in VS Code when debugging unit tests.
+    // Here we simply disable coverage reports when running tests from VS Code
+    // in order to avoid this problem.
+    "python.testing.pytestArgs": [
+        "--import-mode=importlib",
+        "--no-cov"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+}

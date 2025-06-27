@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Silica Sand",
+        "sources": []
+    },
+    {
+        "id": 2,
+        "name": "Silicon",
+        "sources": []
+    },
+    {
+        "id": 3,
+        "name": "Polysilicon",
+        "sources": []
+    },
+    {
+        "id": 4,
+        "name": "Silicon Wafers",
+        "sources": []
+    },
+    {
+        "id": 5,
+        "name": "Integrated Circuit",
+        "sources": []
+    },
+    {
+        "id": 6,
+        "name": "Electronics Module",
+        "sources": []
+    },
+    {
+        "id": 7,
+        "name": "Computer",
+        "sources": []
+    }
+]

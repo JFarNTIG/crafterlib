@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "category": "Crafting",
+        "requirements": {
+            "Crafting Table": 1
+        },
+        "ingredients": {
+            "Cobblestone": 8
+        },
+        "products": {
+            "Furnace": 1
+        }
+    },
+    {
+        "id": 2,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Planks": 4
+        },
+        "products": {
+            "Crafting Table": 1
+        }
+    },
+    {
+        "id": 3,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Logs": 1
+        },
+        "products": {
+            "Planks": 4
+        }
+    },
+    {
+        "id": 4,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Planks": 1
+        },
+        "products": {
+            "Sticks": 4
+        }
+    },
+    {
+        "id": 5,
+        "category": "Smelting",
+        "requirements": {
+            "Furnace": 1
+        },
+        "ingredients": {
+            "Raw Iron": 1,
+            "Coal": 0.125
+        },
+        "products": {
+            "Iron Ingot": 1
+        }
+    },
+    {
+        "id": 6,
+        "category": "Crafting",
+        "requirements": {
+            "Crafting Table": 1
+        },
+        "ingredients": {
+            "Iron Ingot": 3,
+            "Sticks": 2
+        },
+        "products": {
+            "Iron Pickaxe": 1
+        }
+    },
+    {
+        "id": 7,
+        "category": "Crafting",
+        "requirements": {
+            "Crafting Table": 1
+        },
+        "ingredients": {
+            "Cobblestone": 3,
+            "Sticks": 2
+        },
+        "products": {
+            "Stone Pickaxe": 1
+        }
+    },
+    {
+        "id": 8,
+        "category": "Crafting",
+        "requirements": {
+            "Crafting Table": 1
+        },
+        "ingredients": {
+            "Planks": 3,
+            "Sticks": 2
+        },
+        "products": {
+            "Wood Pickaxe": 1
+        }
+    },
+    {
+        "id": 9,
+        "category": "Crafting",
+        "requirements": {
+            "Crafting Table": 1
+        },
+        "ingredients": {
+            "Gold Nugget": 9
+        },
+        "products": {
+            "Gold Ingot": 1
+        }
+    },
+    {
+        "id": 10,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Gold Ingot": 1
+        },
+        "products": {
+            "Gold Nugget": 9
+        }
+    },
+    {
+        "id": 11,
+        "category": "Smelting",
+        "requirements": {
+            "Furnace": 1
+        },
+        "ingredients": {
+            "Raw Gold": 1,
+            "Coal": 0.125
+        },
+        "products": {
+            "Gold Ingot": 1
+        }
+    },
+    {
+        "id": 12,
+        "category": "Smelting",
+        "requirements": {
+            "Furnace": 1
+        },
+        "ingredients": {
+            "Cobblestone": 1,
+            "Coal": 0.125
+        },
+        "products": {
+            "Stone": 1
+        }
+    },
+    {
+        "id": 13,
+        "category": "Crafting",
+        "requirements": {
+            "Crafting Table": 1
+        },
+        "ingredients": {
+            "Gold Ingot": 3,
+            "Sticks": 2
+        },
+        "products": {
+            "Gold Pickaxe": 1
+        }
+    },
+    {
+        "id": 14,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Coal": 1,
+            "Sticks": 1
+        },
+        "products": {
+            "Torch": 4
+        }
+    }
+]
