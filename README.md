@@ -38,7 +38,7 @@ crafterlib is tested on Python versions 3.10 and later. Ensure you have Python 3
 You can install the latest version of crafterlib with the following command:
 
 ```
-pip install git+https://github.com/JFarNTIG/crafterlib.git@v0.1.0
+pip install git+https://github.com/JFarNTIG/crafterlib.git@v0.1.0-alpha
 ```
 
 After this, it's quick and easy to import crafterlib in your project and get started:
