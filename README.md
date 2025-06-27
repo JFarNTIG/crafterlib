@@ -31,7 +31,7 @@ crafterlib is currently in alpha, so features may be buggy or unavailable.
 
 If you just want to build something using crafterlib, you can follow these instructions.
 
-crafterlib is tested on Python versions 3.9 and later. Ensure you have Python 3.9 or later installed before proceeding.
+crafterlib is tested on Python versions 3.10 and later. Ensure you have Python 3.10 or later installed before proceeding.
 
 You can install the latest version of crafterlib with the following command:
 
