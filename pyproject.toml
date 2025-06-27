@@ -11,7 +11,7 @@ authors = [{name = "Jacob Farnsworth", email = "jacob.farnsworth97@gmail.com"}]
 license = {text = "MIT"}
 requires-python = ">=3.9"
 dependencies = [
-    "networkx>=3.5"
+    "networkx>=3.2"
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",
