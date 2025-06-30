@@ -44,6 +44,35 @@ class Recipe:
     
     def has_product(self, product: str) -> bool:
         return product in self.products
+    
+    def get_ingredients(self, num_crafts: float = 1) -> Dict[str, float]:
+        """Calculate the ingredients required to craft
+        this recipe `num_crafts` times.
+
+        Args
+        -- 
+            num_crafts: The number of times the recipe will be crafted.
+            If zero, an empty dict is always returned.
+        
+        Returns
+        -- 
+            Ingredient dict, example: `{"Item 1": 2, "Item 2": 4}`
+
+        Raises
+        --
+            ValueError if num_crafts was negative
+        """
+        if num_crafts < 0:
+            raise ValueError(f"Invalid number of crafts: {num_crafts}")
+        elif num_crafts == 0:
+            # edge case: just return the empty dict in this case
+            return {}
+        
+        ingredients_for_n = {}
+        for ingredient, amount in self.ingredients.items():
+            ingredients_for_n[ingredient] = amount * num_crafts
+
+        return ingredients_for_n
 
     def to_dict(self) -> Dict[str, Any]:
         """Return a representation of the recipe as a dictionary."""
