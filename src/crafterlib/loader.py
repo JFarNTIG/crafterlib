@@ -10,6 +10,7 @@ from typing import Dict
 
 from crafterlib.recipe import Recipe
 from crafterlib.item import Item
+from crafterlib.crafting_grid import CraftingGrid
 from crafterlib.crafting_data import GameCraftingData
 
 _crafting_data_cache: Dict[str, GameCraftingData] = {}
@@ -48,6 +49,7 @@ def load_data_for_game(
     
     items = []
     recipes = []
+    crafting_grids = []
 
     def recipe_handler(recipe_json):
         if not isinstance(recipe_json, list):
@@ -61,6 +63,12 @@ def load_data_for_game(
 
         items.extend(Item.from_dict(obj) for obj in item_json if isinstance(obj, dict))
 
+    def crafting_grid_handler(crafting_grid_json):
+        if not isinstance(crafting_grid_json, list):
+            raise ValueError("Top-level JSON value must be an array")
+
+        crafting_grids.extend(CraftingGrid.from_dict(obj) for obj in crafting_grid_json if isinstance(obj, dict))
+
     root_json_path = subdir / "root.json"
     if not root_json_path.exists():
         raise Exception(f"No root.json found in data folder for {game}")
@@ -71,6 +79,7 @@ def load_data_for_game(
     game_name = root_data.get("game", game)
     item_files = root_data.get("item_files", [])
     recipe_files = root_data.get("recipe_files", [])
+    crafting_grid_files = root_data.get("crafting_grid_files", [])
 
     for filename in item_files:
         file_path = subdir / filename
@@ -86,7 +95,14 @@ def load_data_for_game(
 
         recipe_handler(recipe_data)
 
-    crafting_data = GameCraftingData(game_name, items, recipes)
+    for filename in crafting_grid_files:
+        file_path = subdir / filename
+        with file_path.open("r", encoding="utf-8") as fp:
+            crafting_grid_data = json.load(fp)
+
+        crafting_grid_handler(crafting_grid_data)
+
+    crafting_data = GameCraftingData(game_name, items, recipes, crafting_grids)
     _crafting_data_cache[game] = crafting_data
     return crafting_data
 

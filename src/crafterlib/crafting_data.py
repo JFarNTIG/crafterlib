@@ -5,6 +5,7 @@ SPDX-License-Identifier: MIT
 from typing import Dict, List, Optional
 from crafterlib.item import Item
 from crafterlib.recipe import Recipe
+from crafterlib.crafting_grid import CraftingGrid
 from crafterlib.graph import ItemGraph
 
 def _make_item_id_map(items: List[Item]):
@@ -38,10 +39,11 @@ def _make_recipe_id_map(recipes: List[Recipe]):
     return recipe_id_map
 
 class GameCraftingData:
-    def __init__(self, name: str, items: List[Item] = [], recipes: List[Recipe] = []):
+    def __init__(self, name: str, items: List[Item] = [], recipes: List[Recipe] = [], crafting_grids: List[CraftingGrid] = []):
         self.name = name
         self.items = items
         self.recipes = recipes
+        self.crafting_grids = crafting_grids
         self.item_id_map = _make_item_id_map(items)
         self.item_name_map = _make_item_name_map(items)
         self.recipe_id_map = _make_recipe_id_map(recipes)
@@ -75,3 +77,13 @@ class GameCraftingData:
                 recipes_for_item.append(recipe)
         return recipes_for_item
     
+    def get_crafting_grid_for_item(self, item_name: str) -> List[CraftingGrid]:
+       """Get all crafting grid recipes in which the specified
+       item appears as a product.
+       """
+       crafting_grids_for_item = []
+
+       for crafting_grid in self.crafting_grids:
+           if crafting_grid.has_product(item_name):
+               crafting_grids_for_item.append(crafting_grid )
+       return crafting_grids_for_item
