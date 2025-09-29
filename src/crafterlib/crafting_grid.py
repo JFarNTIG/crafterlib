@@ -10,8 +10,7 @@ class CraftingGrid:
 
     Attributes
     ---
-    crafting_coordinates : a representation of a crafting grid using coordinates (A1, A2, A3, B1...) 
-    in the form of a dictionary
+    crafting_coordinates : a representation of a crafting grid using coordinates (A1, A2, A3, B1...) in the form of a dictionary
 
     product : The name of the product attached to the crafting grid recipe
     """
@@ -30,6 +29,16 @@ class CraftingGrid:
     def from_dict(cls, data: Dict[str, Any]) -> "CraftingGrid":
         """
         Build a CraftingGrid instance from a plain dictionary.
+
+        Parameters
+        ---
+
+        data : a representation of a crafting grid using coordinates (A1, A2, A3, B1...) in the form of a dictionary
+
+        Returns
+        ---
+        A crafting grid instance built upon the dictionary provided
+
         """
         return cls(
             crafting_coordinates=data.get("crafting_coordinates",{}),

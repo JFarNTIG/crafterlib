@@ -5,9 +5,6 @@ SPDX-License-Identifier: MIT
 
 import crafterlib
 
-# crafterlib provides a function `load_data_for_game` to load item
-# and crafting data for a certain game.
-
 game_data = crafterlib.load_data_for_game("minecraft")
 
 item_name = "Furnace"
@@ -19,7 +16,8 @@ for crafting_grid in crafting_grids:
     for coordinate,item in crafting_grid.crafting_coordinates.items():
         print(coordinate,item)
 
-# Very simple visual representation of the crafting grid, could be implemented in a more refined way
+# Very simple visual representation of the crafting grid, this could be implemented in a 
+# more user friendly way by having a graphic display of the data.
 for crafting_grid in crafting_grids:
     print("\nThe crafting grid for",item_name,"is: \n")
     print("___________________________________________")
