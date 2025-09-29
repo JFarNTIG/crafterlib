@@ -6,6 +6,7 @@
         "machines.json"
     ],
     "recipe_files": [
-        "recipes.json"
+        "recipes.json",
+        "recipes_potions.json"
     ]
 }
