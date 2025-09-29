@@ -1,0 +1,100 @@
+[
+    { "id": 15, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Water Bottle": 3, "Fermented Spider Eye": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Weakness": 3 } },
+    { "id": 16, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Weakness": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Weakness": 3 } },
+    { "id": 17, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Weakness": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Weakness": 3 } },
+    
+    { "id": 18, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Ghast Tear": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Regeneration": 3 } },
+    { "id": 19, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Regeneration": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Regeneration II": 3 } },
+    { "id": 20, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Regeneration": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Regeneration +": 3 } },
+    { "id": 21, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Regeneration": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Regeneration": 3 } },
+    { "id": 22, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Regeneration": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Regeneration": 3 } },
+  
+    { "id": 23, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Glistering Melon Slice": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Healing": 3 } },
+    { "id": 24, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Healing": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Healing II": 3 } },
+    { "id": 25, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Healing": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Healing": 3 } },
+    { "id": 26, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Healing": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Healing": 3 } },
+  
+    { "id": 27, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Spider Eye": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Poison": 3 } },
+    { "id": 28, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Poison": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Poison II": 3 } },
+    { "id": 29, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Poison": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Poison +": 3 } },
+    { "id": 30, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Poison": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Poison": 3 } },
+    { "id": 31, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Poison": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Poison": 3 } },
+  
+    { "id": 32, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Healing": 3, "Fermented Spider Eye": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Harming": 3 } },
+    { "id": 33, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Poison": 3, "Fermented Spider Eye": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Harming": 3 } },
+    { "id": 34, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Harming": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Harming II": 3 } },
+    { "id": 35, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Harming": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Harming": 3 } },
+    { "id": 36, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Harming": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Harming": 3 } },
+  
+    { "id": 37, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Sugar": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Swiftness": 3 } },
+    { "id": 38, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Swiftness": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Swiftness II": 3 } },
+    { "id": 39, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Swiftness": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Swiftness +": 3 } },
+    { "id": 40, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Swiftness": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Swiftness": 3 } },
+    { "id": 41, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Swiftness": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Swiftness": 3 } },
+  
+    { "id": 42, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Swiftness": 3, "Fermented Spider Eye": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Slowness": 3 } },
+    { "id": 43, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Leaping": 3, "Fermented Spider Eye": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Slowness": 3 } },
+    { "id": 44, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Slowness": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Slowness II": 3 } },
+    { "id": 45, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Slowness": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Slowness +": 3 } },
+    { "id": 46, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Slowness": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Slowness": 3 } },
+    { "id": 47, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Slowness": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Slowness": 3 } },
+  
+    { "id": 48, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Magma Cream": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Fire Resistance": 3 } },
+    { "id": 49, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Fire Resistance": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Fire Resistance +": 3 } },
+    { "id": 50, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Fire Resistance": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Fire Resistance": 3 } },
+    { "id": 51, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Fire Resistance": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Fire Resistance": 3 } },
+  
+    { "id": 52, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Blaze Powder": 1.05 }, "products": { "Potion of Strength": 3 } },
+    { "id": 53, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Strength": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Strength II": 3 } },
+    { "id": 54, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Strength": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Strength +": 3 } },
+    { "id": 55, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Strength": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Strength": 3 } },
+    { "id": 56, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Strength": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Strength": 3 } },
+  
+    { "id": 57, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Golden Carrot": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Night Vision": 3 } },
+    { "id": 58, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Night Vision": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Night Vision +": 3 } },
+    { "id": 59, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Night Vision": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Night Vision": 3 } },
+    { "id": 60, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Night Vision": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Night Vision": 3 } },
+
+    { "id": 61, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Night Vision": 3, "Fermented Spider Eye": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Invisibility": 3 } },
+    { "id": 62, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Invisibility": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Invisibility +": 3 } },
+    { "id": 63, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Invisibility": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Invisibility": 3 } },
+    { "id": 64, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Invisibility": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Invisibility": 3 } },
+  
+    { "id": 65, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Rabbit's Foot": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Leaping": 3 } },
+    { "id": 66, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Leaping": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Leaping II": 3 } },
+    { "id": 67, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Leaping": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Leaping +": 3 } },
+    { "id": 68, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Leaping": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Leaping": 3 } },
+    { "id": 69, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Leaping": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Leaping": 3 } },
+  
+    { "id": 70, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Phantom Membrane": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Slow Falling": 3 } },
+    { "id": 71, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Slow Falling": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Slow Falling +": 3 } },
+    { "id": 72, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Slow Falling": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Slow Falling": 3 } },
+    { "id": 73, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Slow Falling": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Slow Falling": 3 } },
+  
+    { "id": 74, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Pufferfish": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Water Breathing": 3 } },
+    { "id": 75, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Water Breathing": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of Water Breathing +": 3 } },
+    { "id": 76, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of Water Breathing": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of Water Breathing": 3 } },
+    { "id": 77, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of Water Breathing": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of Water Breathing": 3 } },
+  
+    { "id": 78, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Turtle Shell": 1, "Blaze Powder": 0.05 }, "products": { "Potion of the Turtle Master": 3 } },
+    { "id": 79, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of the Turtle Master": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of the Turtle Master II": 3 } },
+    { "id": 80, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of the Turtle Master": 3, "Redstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Potion of the Turtle Master +": 3 } },
+    { "id": 81, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Potion of the Turtle Master": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Potion of the Turtle Master": 3 } },
+    { "id": 82, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Potion of the Turtle Master": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Potion of the Turtle Master": 3 } },
+  
+    { "id": 83, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Water Bottle": 3, "Any Base Ingredient": 1, "Blaze Powder": 0.05 }, "products": { "Mundane Potion": 3 } },
+    { "id": 84, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Mundane Potion": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Mundane Potion": 3 } },
+    { "id": 85, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Mundane Potion": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Mundane Potion": 3 } },
+  
+    { "id": 86, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Water Bottle": 3, "Glowstone Dust": 1, "Blaze Powder": 0.05 }, "products": { "Thick Potion": 3 } },
+    { "id": 87, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Thick Potion": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Thick Potion": 3 } },
+    { "id": 88, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Thick Potion": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Thick Potion": 3 } },
+  
+    { "id": 89, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Glass Bottle": 3, "Water Source": 1 }, "products": { "Water Bottle": 3 } },
+    { "id": 90, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Water Bottle": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Water Bottle": 3 } },
+    { "id": 91, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Water Bottle": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Water Bottle": 3 } },
+  
+    { "id": 92, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Water Bottle": 3, "Nether Wart": 1, "Blaze Powder": 0.05 }, "products": { "Awkward Potion": 3 } },
+    { "id": 93, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Awkward Potion": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Awkward Potion": 3 } },
+    { "id": 94, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Awkward Potion": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Awkward Potion": 3 } }
+]
