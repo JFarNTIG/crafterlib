@@ -178,5 +178,76 @@
         "products": {
             "Torch": 4
         }
+    },
+    {
+        "id": 1000,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Spider Eye": 1,
+            "Sugar": 1,
+            "Brown Mushroom": 1
+        },
+        "products": {
+            "Fermented Spider Eye": 1
+        }
+    },
+    {
+        "id": 1001,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Melon Slice": 1,
+            "Gold Nugget": 8
+        },
+        "products": {
+            "Glistering Melon Slice": 1
+        }
+    },
+    {
+        "id": 1002,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Carrot": 1,
+            "Gold Nugget": 8
+        },
+        "products": {
+            "Gold Carrot": 1
+        }
+    },
+    {
+        "id": 1003,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Blaze Powder": 1,
+            "Slimeball": 1
+        },
+        "products": {
+            "Magma Cream": 1
+        }
+    },
+    {
+        "id": 1004,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Turtle Scute": 5
+        },
+        "products": {
+            "Turtle Shell": 1
+        }
+    },
+    {
+        "id": 1005,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Block of Redstone": 1
+        },
+        "products": {
+            "Redstone Dust": 9
+        }
     }
 ]
