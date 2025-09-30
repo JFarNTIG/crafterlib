@@ -88,5 +88,5 @@ class GameCraftingData:
 
        for crafting_grid in self.crafting_grids:
            if crafting_grid.has_product(item_name):
-               crafting_grids_for_item.append(crafting_grid )
+               crafting_grids_for_item.append(crafting_grid)
        return crafting_grids_for_item

@@ -15,7 +15,7 @@ class CraftingGrid:
     product : The name of the product attached to the crafting grid recipe
     """
 
-    def __init__(self, product: str, crafting_coordinates: Dict[str,str] = {}):
+    def __init__(self, product: str, crafting_coordinates: Dict[str, str] = {}):
         self.crafting_coordinates = crafting_coordinates
         self.product = product
 
@@ -41,6 +41,6 @@ class CraftingGrid:
 
         """
         return cls(
-            crafting_coordinates=data.get("crafting_coordinates",{}),
+            crafting_coordinates=data.get("crafting_coordinates", {}),
             product=data.get("product", "")
         )
