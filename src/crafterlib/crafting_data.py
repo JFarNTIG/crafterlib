@@ -57,7 +57,7 @@ class GameCraftingData:
     def num_recipes(self):
         return len(self.recipes)
     
-    def num_crafting_grids(self):
+    def num_crafting_grids(self) -> int:
         return len(self.crafting_grids)
     
     def get_item_by_id(self, id: int) -> Optional[Item]:
