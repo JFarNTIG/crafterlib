@@ -1,0 +1,25 @@
+[
+    {
+        "product": "Dough",
+        "crafting_coordinates": {
+            "A1": "Water",
+            "A2": "Flour"
+        }
+    },
+
+    {
+        "product": "Pepperoni",
+        "crafting_coordinates": {
+            "A1": "Meat",
+            "A2": "Salt"
+        }
+    },
+
+    {
+        "product": "Cheese",
+        "crafting_coordinates": {
+            "A1": "Milk",
+            "A2": "Vinegar"
+        }
+    }
+]
