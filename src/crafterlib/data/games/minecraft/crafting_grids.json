@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "products": {
+            "Furnace": 1
+        },
+        "crafting_coordinates": {
+            "A1": "Cobblestone",
+            "A2": "Cobblestone",
+            "A3": "Cobblestone",
+            "B1": "Cobblestone",
+            "B2": "",
+            "B3": "Cobblestone",
+            "C1": "Cobblestone",
+            "C2": "Cobblestone",
+            "C3": "Cobblestone"
+        }
+    },
+
+    {
+        "id": 2,
+        "products": {
+            "Crafting Table": 1
+        },
+        "crafting_coordinates": {
+            "A1": "",
+            "A2": "",
+            "A3": "",
+            "B1": "Planks",
+            "B2": "Planks",
+            "B3": "",
+            "C1": "Planks",
+            "C2": "Planks",
+            "C3": ""
+        }
+    }
+]
