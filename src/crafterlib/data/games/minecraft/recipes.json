@@ -196,7 +196,9 @@
     {
         "id": 1000,
         "category": "Crafting",
-        "requirements": {},
+        "requirements": {
+            "Crafting Table": 1
+        },
         "ingredients": {
             "Glass": 3
         },
@@ -220,7 +222,9 @@
     {
         "id": 1002,
         "category": "Crafting",
-        "requirements": {},
+        "requirements": {
+            "Crafting Table": 1
+        },
         "ingredients": {
             "Melon Slice": 1,
             "Gold Nugget": 8
@@ -232,7 +236,9 @@
     {
         "id": 1003,
         "category": "Crafting",
-        "requirements": {},
+        "requirements": {
+            "Crafting Table": 1
+        },
         "ingredients": {
             "Carrot": 1,
             "Gold Nugget": 8
@@ -256,7 +262,9 @@
     {
         "id": 1005,
         "category": "Crafting",
-        "requirements": {},
+        "requirements": {
+            "Crafting Table": 1
+        },
         "ingredients": {
             "Turtle Scute": 5
         },
