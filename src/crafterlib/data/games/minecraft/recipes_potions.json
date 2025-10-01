@@ -90,7 +90,7 @@
     { "id": 87, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Thick Potion": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Thick Potion": 3 } },
     { "id": 88, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Thick Potion": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Thick Potion": 3 } },
   
-    { "id": 89, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Glass Bottle": 3, "Water Source": 1 }, "products": { "Water Bottle": 3 } },
+    { "id": 89, "category": "Filling", "requirements": { "Water Source": 1 }, "ingredients": { "Glass Bottle": 1 }, "products": { "Water Bottle": 1 } },
     { "id": 90, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Water Bottle": 3, "Gunpowder": 1, "Blaze Powder": 0.05 }, "products": { "Splash Water Bottle": 3 } },
     { "id": 91, "category": "Brewing", "requirements": { "Brewing Stand": 1 }, "ingredients": { "Splash Water Bottle": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05 }, "products": { "Lingering Water Bottle": 3 } },
   
