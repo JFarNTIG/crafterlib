@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "product": "Dough",
         "crafting_coordinates": {
             "A1": "Water",
@@ -8,6 +9,7 @@
     },
 
     {
+        "id": 2,
         "product": "Pepperoni",
         "crafting_coordinates": {
             "A1": "Meat",
@@ -16,6 +18,7 @@
     },
 
     {
+        "id": 3,
         "product": "Cheese",
         "crafting_coordinates": {
             "A1": "Milk",

@@ -38,6 +38,16 @@ def _make_recipe_id_map(recipes: List[Recipe]):
         recipe_id_map[recipe.id] = recipe
     return recipe_id_map
 
+def _make_crafting_grid_id_map(crafting_grids: List[CraftingGrid]):
+    crafting_grid_id_map: Dict[str, CraftingGrid] = {}
+    for crafting_grid in crafting_grids:
+        existing_crafting_grid = crafting_grid_id_map.get(crafting_grid.id)
+        if existing_crafting_grid:
+            raise ValueError(f"Can't add crafting grid[id={crafting_grid.id}], "
+                             f"ID conflict with crafting grid[id={existing_crafting_grid.id}]")
+        crafting_grid_id_map[crafting_grid.id] = crafting_grid
+    return crafting_grid_id_map
+
 class GameCraftingData:
     def __init__(self, name: str, items: List[Item] = [], recipes: List[Recipe] = [], crafting_grids: List[CraftingGrid] = []):
         self.name = name
@@ -47,6 +57,7 @@ class GameCraftingData:
         self.item_id_map = _make_item_id_map(items)
         self.item_name_map = _make_item_name_map(items)
         self.recipe_id_map = _make_recipe_id_map(recipes)
+        self.crafting_grid_id_map = _make_crafting_grid_id_map(crafting_grids)
         self.item_graph = ItemGraph()
         self.item_graph.add_items([item.name for item in items])
         self.item_graph.add_recipes(recipes)
@@ -68,6 +79,9 @@ class GameCraftingData:
     
     def get_recipe_by_id(self, id: int) -> Optional[Item]:
         return self.recipe_id_map.get(id)
+    
+    def get_crafting_grid_by_id(self, id: int) -> Optional[CraftingGrid]:
+        return self.crafting_grid_id_map.get(id)
     
     def get_recipes_for_item(self, item_name: str) -> List[Recipe]:
         """Get all recipes in which the specified

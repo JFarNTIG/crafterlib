@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "product": "Furnace",
         "crafting_coordinates": {
             "A1": "Cobblestone",
@@ -15,6 +16,7 @@
     },
 
     {
+        "id": 2,
         "product": "Crafting Table",
         "crafting_coordinates": {
             "A1": "",

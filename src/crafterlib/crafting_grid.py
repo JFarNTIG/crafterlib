@@ -10,14 +10,18 @@ class CraftingGrid:
 
     Attributes
     ---
-    crafting_coordinates : a representation of a crafting grid using coordinates (A1, A2, A3, B1...) in the form of a dictionary
-
-    product : The name of the product attached to the crafting grid recipe
+    id : int
+        An integer ID for the crafting grid.
+    product : str
+        The name of the product attached to the crafting grid recipe
+    crafting_coordinates : Dict[str, str]
+        a representation of a crafting grid using coordinates (A1, A2, A3, B1...) in the form of a dictionary
     """
 
-    def __init__(self, product: str, crafting_coordinates: Dict[str, str] = {}):
-        self.crafting_coordinates = crafting_coordinates
+    def __init__(self, id: int, product: str, crafting_coordinates: Dict[str, str] = {}):
+        self.id = id
         self.product = product
+        self.crafting_coordinates = crafting_coordinates
 
     def has_product(self, product: str) -> bool:
         """
@@ -41,6 +45,7 @@ class CraftingGrid:
 
         """
         return cls(
-            crafting_coordinates=data.get("crafting_coordinates", {}),
-            product=data.get("product", "")
+            id=data.get("id", -1),
+            product=data.get("product", ""),
+            crafting_coordinates=data.get("crafting_coordinates", {})
         )

@@ -8,6 +8,7 @@ import pytest
 from crafterlib.crafting_grid import CraftingGrid
 
 test_crafting_grid_dict = {
+    "id": 1,
     "product": "Furnace",
     "crafting_coordinates": {
         "A1": "Cobblestone",
@@ -33,6 +34,7 @@ def test_has_product():
 
 def test_crafting_grid_from_dict():
     crafting_grid: CraftingGrid = CraftingGrid.from_dict(test_crafting_grid_dict)
+    assert crafting_grid.id == 1
     assert crafting_grid.product == "Furnace"
     assert crafting_grid.crafting_coordinates == {
         "A1": "Cobblestone",
