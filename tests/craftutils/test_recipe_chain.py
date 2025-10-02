@@ -121,7 +121,7 @@ def test_combine_ingredients():
 
     # Test with a potion that needs Blaze Powder
     # in multiple recipes.
-    output = get_recipe_chain(game_data, "Water Bottle", "Splash Potion of Invisibility", False)
+    output = get_recipe_chain(game_data, "Water Bottle", "Splash Potion of Invisibility", True)
     assert output == [
         {
             "ingredients": { "Water Bottle": 3, "Nether Wart": 1, "Blaze Powder": 0.2 },
@@ -138,5 +138,25 @@ def test_combine_ingredients():
         {
             "ingredients": { "Potion of Invisibility": 3, "Gunpowder": 1 },
             "products": { "Splash Potion of Invisibility": 3 }
+        }
+    ]
+
+def test_combine_ingredients_complex():
+    game_data = load_data_for_game("test_game3", "test_data")
+
+    # Test with a game that needs the same ingredients in multiple steps
+    output = get_recipe_chain(game_data, "Shovel", "Large Sand Castle", True)
+    assert output == [
+        {
+            "ingredients": { "Sand": 3, "Water": 6, "Shovel": 1 },
+            "products": { "Sand Pile": 1 }
+        },
+        {
+            "ingredients": { "Sand Pile": 1, "Bucket": 2 },
+            "products": { "Sand Castle": 1 }
+        },
+        {
+            "ingredients": { "Sand Castle": 1 },
+            "products": { "Large Sand Castle": 1 }
         }
     ]
