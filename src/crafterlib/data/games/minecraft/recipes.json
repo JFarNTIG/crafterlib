@@ -180,7 +180,7 @@
         }
     },
     {
-        "id": 15,
+        "id": 99,
         "category": "Smelting",
         "requirements": {
             "Furnace": 1
