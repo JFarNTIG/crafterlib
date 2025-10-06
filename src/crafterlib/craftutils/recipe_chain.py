@@ -53,7 +53,7 @@ def get_recipe_chain(game_data: GameCraftingData,
     Returns None if no connection between `ingredient` and `product` is found.
     """
     # If `ingredient` and `product` are the same,
-    # this funciton should return None.
+    # this function should return None.
     if ingredient == product:
         return None
 
