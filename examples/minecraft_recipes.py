@@ -52,8 +52,8 @@ for recipe in recipes:
     desired_amount = 10
 
     num_crafts = recipe.get_num_crafts(
-        gameData=game_data,
-        itemName=item_name,
+        game_data=game_data,
+        item_name=item_name,
         amount=10
     )
 
