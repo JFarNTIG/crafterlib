@@ -1,0 +1,9 @@
+{
+    "game": "Sand Game",
+    "item_files": [
+        "items.json"
+    ],
+    "recipe_files": [
+        "recipes.json"
+    ]
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Sand": 2,
+            "Water": 3,
+            "Shovel": 1
+        },
+        "products": {
+            "Sand Pile": 1
+        }
+    },
+    {
+        "id": 2,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Sand Pile": 1,
+            "Sand": 1,
+            "Water": 1,
+            "Bucket": 1
+        },
+        "products": {
+            "Sand Castle": 1
+        }
+    },
+    {
+        "id": 3,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Sand Castle": 1,
+            "Water": 2,
+            "Bucket": 1
+        },
+        "products": {
+            "Large Sand Castle": 1
+        }
+    }
+]

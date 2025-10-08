@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Sand",
+        "sources": []
+    },
+    {
+        "id": 2,
+        "name": "Water",
+        "sources": []
+    },
+    {
+        "id": 3,
+        "name": "Shovel",
+        "sources": []
+    },
+    {
+        "id": 4,
+        "name": "Bucket",
+        "sources": []
+    },
+    {
+        "id": 5,
+        "name": "Sand Pile",
+        "sources": []
+    },
+    {
+        "id": 6,
+        "name": "Sand Castle",
+        "sources": []
+    },
+    {
+        "id": 7,
+        "name": "Large Sand Castle",
+        "sources": []
+    }
+]

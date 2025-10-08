@@ -6,7 +6,8 @@
         "machines.json"
     ],
     "recipe_files": [
-        "recipes.json"
+        "recipes.json",
+        "recipes_potions.json"
     ],
     "crafting_grid_files": [
         "crafting_grids.json"
