@@ -2,13 +2,14 @@
 
 SPDX-License-Identifier: MIT
 """
+from typing import List, Dict
 import networkx as nx
 from crafterlib import GameCraftingData
 
 def get_recipe_chain(game_data: GameCraftingData,
                      ingredient: str,
                      product: str,
-                     combine_ingredients: bool = False) -> list:
+                     combine_ingredients: bool = False) -> List[Dict]:
     """Get a chain of recipes that connect `ingredient` to `product`.
 
     Returns a list of dictionaries with ingredients and products
