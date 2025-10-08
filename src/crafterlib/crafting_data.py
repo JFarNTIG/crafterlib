@@ -5,6 +5,7 @@ SPDX-License-Identifier: MIT
 from typing import Dict, List, Optional
 from crafterlib.item import Item
 from crafterlib.recipe import Recipe
+from crafterlib.crafting_grid import CraftingGrid
 from crafterlib.graph import ItemGraph
 
 def _make_item_id_map(items: List[Item]):
@@ -37,14 +38,26 @@ def _make_recipe_id_map(recipes: List[Recipe]):
         recipe_id_map[recipe.id] = recipe
     return recipe_id_map
 
+def _make_crafting_grid_id_map(crafting_grids: List[CraftingGrid]):
+    crafting_grid_id_map: Dict[str, CraftingGrid] = {}
+    for crafting_grid in crafting_grids:
+        existing_crafting_grid = crafting_grid_id_map.get(crafting_grid.id)
+        if existing_crafting_grid:
+            raise ValueError(f"Can't add crafting grid[id={crafting_grid.id}], "
+                             f"ID conflict with crafting grid[id={existing_crafting_grid.id}]")
+        crafting_grid_id_map[crafting_grid.id] = crafting_grid
+    return crafting_grid_id_map
+
 class GameCraftingData:
-    def __init__(self, name: str, items: List[Item] = [], recipes: List[Recipe] = []):
+    def __init__(self, name: str, items: List[Item] = [], recipes: List[Recipe] = [], crafting_grids: List[CraftingGrid] = []):
         self.name = name
         self.items = items
         self.recipes = recipes
+        self.crafting_grids = crafting_grids
         self.item_id_map = _make_item_id_map(items)
         self.item_name_map = _make_item_name_map(items)
         self.recipe_id_map = _make_recipe_id_map(recipes)
+        self.crafting_grid_id_map = _make_crafting_grid_id_map(crafting_grids)
         self.item_graph = ItemGraph()
         self.item_graph.add_items([item.name for item in items])
         self.item_graph.add_recipes(recipes)
@@ -55,6 +68,9 @@ class GameCraftingData:
     def num_recipes(self):
         return len(self.recipes)
     
+    def num_crafting_grids(self) -> int:
+        return len(self.crafting_grids)
+    
     def get_item_by_id(self, id: int) -> Optional[Item]:
         return self.item_id_map.get(id)
     
@@ -63,6 +79,9 @@ class GameCraftingData:
     
     def get_recipe_by_id(self, id: int) -> Optional[Item]:
         return self.recipe_id_map.get(id)
+    
+    def get_crafting_grid_by_id(self, id: int) -> Optional[CraftingGrid]:
+        return self.crafting_grid_id_map.get(id)
     
     def get_recipes_for_item(self, item_name: str) -> List[Recipe]:
         """Get all recipes in which the specified
@@ -75,3 +94,13 @@ class GameCraftingData:
                 recipes_for_item.append(recipe)
         return recipes_for_item
     
+    def get_crafting_grid_for_item(self, item_name: str) -> List[CraftingGrid]:
+       """Get all crafting grid recipes in which the specified
+       item appears as a product.
+       """
+       crafting_grids_for_item = []
+
+       for crafting_grid in self.crafting_grids:
+           if crafting_grid.has_product(item_name):
+               crafting_grids_for_item.append(crafting_grid)
+       return crafting_grids_for_item

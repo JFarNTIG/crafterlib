@@ -8,6 +8,7 @@ def test_load_data():
     game_data = load_data_for_game("test_game", "test_data")
     assert game_data.num_items() == 13
     assert game_data.num_recipes() == 5
+    assert game_data.num_crafting_grids() == 3
 
 def test_item_parsing():
     game_data = load_data_for_game("test_game", "test_data")

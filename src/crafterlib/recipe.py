@@ -3,6 +3,7 @@
 SPDX-License-Identifier: MIT
 """
 from typing import Dict, Any
+import math
 
 class Recipe:
     """
@@ -74,6 +75,54 @@ class Recipe:
 
         return ingredients_for_n
 
+    def get_num_crafts(self, game_data, item_name: str, amount: float):
+        """Calculate the amount of times you need to craft to get N of a certain item.
+        Args
+        --
+            item_name: The name of the item you want to craft.
+            amount: The total number of said item you want crafted.
+
+        Returns
+        --
+            The amount of crafts needed to get N amount of item, example: `4`
+
+        Raises
+        --
+            TypeError if item_name is not a string, amount is not a integer or game_data is invalid.
+            ValueError if amount <= 0, item_name is not produced by this recipe or no recipe exists in game_data  
+
+        Usage
+        --
+            num_crafts = recipe.get_num_crafts(game_data = game_data, item_name = "Torch", amount = 16)
+            should return `4`
+        """
+        # Type Checks
+        if not hasattr(game_data, "get_recipes_for_item"):
+            raise TypeError(f"game_data must be a valid game data object with the get_recipes_for_item function")
+        if not isinstance(item_name, str):
+            raise TypeError(f"item_name must be a string, got `{type(item_name).__name__}`")
+        if not isinstance(amount, int):
+            raise TypeError(f"amount must be a integer, got `{type(amount).__name__}`")  
+
+        # Value Check
+        if amount < 0:
+            raise ValueError(f"Amount must be greater then 0, got `{amount}`")
+        if amount == 0:
+            return {}
+        
+        # Check if recipe exists in game data
+        recipes = game_data.get_recipes_for_item(item_name)
+        if not recipes:
+            raise ValueError(f"No recipe found for item `{item_name}`")
+
+        # Check if recipe produces requested item
+        if item_name not in self.products:
+            raise ValueError(f"Item `{item_name}` is not produced by this recipe")
+
+        product_value = self.products[item_name]
+
+        return math.ceil(amount / product_value)
+        
     def to_dict(self) -> Dict[str, Any]:
         """Return a representation of the recipe as a dictionary."""
         return {
@@ -108,4 +157,4 @@ class Recipe:
 
     def __hash__(self) -> str:
         """Return a hash representation of this recipe."""
-        return hash(self.id)
+        return hash(self.id)    

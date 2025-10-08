@@ -2,6 +2,8 @@
 for a game (Minecraft) and do some basic queries related to items
 and recipes.
 
+It also shows how to calculate how many times a recipe must be crafted to get N desired item.
+
 SPDX-License-Identifier: MIT
 """
 import crafterlib
@@ -43,3 +45,16 @@ for recipe in recipes:
     # (e.g. the crafting table itself)
     print(f"Requirements to make {item_name}:")
     print(recipe.requirements)
+
+    # Calculate how many times this recipe needs to be crafted
+    # To get the desired amount of items
+
+    desired_amount = 10
+
+    num_crafts = recipe.get_num_crafts(
+        game_data=game_data,
+        item_name=item_name,
+        amount=10
+    )
+
+    print(f"To make {desired_amount} {item_name} you need to craft it {num_crafts} time(s)")
