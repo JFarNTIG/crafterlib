@@ -7,8 +7,7 @@
     ],
     "recipe_files": [
         "recipes.json",
-        "recipes_potions.json",
-        "recipes.json"
+        "recipes_potions.json"
     ],
     "crafting_grid_files": [
         "crafting_grids.json"
