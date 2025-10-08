@@ -97,7 +97,7 @@ def test_recipe_numcrafts():
     game_data = load_data_for_game("minecraft")
 
     # Crafting 16 Torches should require 4 crafts
-    assert recipe.get_num_crafts(game_data= game_data, item_name= "Torch", amount= 16) == 4
+    assert recipe.get_num_crafts(game_data=game_data, item_name="Torch", amount=16) == 4
 
 
 def test_recipe_numcrafts_for_zero():
@@ -106,7 +106,7 @@ def test_recipe_numcrafts_for_zero():
 
     # edge case: trying to craft zero of an item
     # it should return an empty dict
-    assert recipe.get_num_crafts(game_data= game_data, item_name= "Torch", amount= 0) == {}
+    assert recipe.get_num_crafts(game_data=game_data, item_name="Torch", amount=0) == {}
 
 
 def test_recipe_numcrafts_for_negative():
@@ -116,7 +116,7 @@ def test_recipe_numcrafts_for_negative():
     # edge case: trying to craft negative of an item
     # raise ValueError
     with pytest.raises(ValueError):
-        recipe.get_num_crafts(game_data= game_data, item_name= "Torch", amount= -2)
+        recipe.get_num_crafts(game_data=game_data, item_name="Torch", amount=-2)
 
 
 def test_recipe_item_name_invalid_format():
@@ -126,7 +126,7 @@ def test_recipe_item_name_invalid_format():
     # edge case: invalid item name type (int instead of str)
     # raises TypeError
     with pytest.raises(TypeError):
-        recipe.get_num_crafts(game_data= game_data, item_name= 123456, amount= 1)
+        recipe.get_num_crafts(game_data=game_data, item_name=123456, amount=1)
 
 
 def test_recipe_amount_invalid_format():
@@ -136,7 +136,7 @@ def test_recipe_amount_invalid_format():
     # edge case: invalid amounttype (str instead of int)
     # raises TypeError
     with pytest.raises(TypeError):
-        recipe.get_num_crafts(game_data= game_data, item_name= "Torch", amount= "NotAnIntegrer")
+        recipe.get_num_crafts(game_data=game_data, item_name="Torch", amount="NotAnIntegrer")
 
 
 def test_recipe_amount_non_integer():
@@ -146,7 +146,7 @@ def test_recipe_amount_non_integer():
     # edge case: invalid amounttype (float instead of int)
     # raises TypeError
     with pytest.raises(TypeError):
-        recipe.get_num_crafts(game_data= game_data, item_name= "Torch", amount= 1.5)
+        recipe.get_num_crafts(game_data=game_data, item_name="Torch", amount=1.5)
 
 
 def test_recipe_not_in_game_data():
@@ -156,7 +156,7 @@ def test_recipe_not_in_game_data():
     # edge case: item not found in game data
     # raises ValueError
     with pytest.raises(ValueError):
-        recipe.get_num_crafts(game_data= game_data, item_name= "FakeItem.exe", amount= 1)
+        recipe.get_num_crafts(game_data=game_data, item_name="FakeItem.exe", amount=1)
 
 
 def test_recipe_fake_game_data():
@@ -166,7 +166,7 @@ def test_recipe_fake_game_data():
     # edge case: invalid game data type (str instead of class with proper structure)
     # raises TypeError
     with pytest.raises(TypeError):
-        recipe.get_num_crafts(game_data= game_data, item_name= "Torch", amount= 1)
+        recipe.get_num_crafts(game_data=game_data, item_name="Torch", amount=1)
 
 
 def test_not_product_of():
@@ -176,4 +176,4 @@ def test_not_product_of():
     # edge case: trying to craft an item that is not produced by this recipe
     # raises ValueError
     with pytest.raises(ValueError):
-        recipe.get_num_crafts(game_data= game_data, item_name= "Iron Pickaxe", amount= 1)
+        recipe.get_num_crafts(game_data=game_data, item_name="Iron Pickaxe", amount=1)
