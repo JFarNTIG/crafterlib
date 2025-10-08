@@ -79,12 +79,14 @@ def get_recipe_chain(game_data: GameCraftingData,
             recipe = recipe.to_dict()
 
             # Find the recipe with the previous product as an ingredient
-            # and remove unwanted data.
+            # and create a short recipe with only `ingredients` and `products`
+            # and append it to the chain.
             if path[i] in recipe['ingredients'].keys():
-                recipe.pop("id")
-                recipe.pop("category")
-                recipe.pop("requirements")
-                chain.append(recipe)
+                short_recipe = {
+                    "ingredients": recipe['ingredients'],
+                    "products": recipe['products']
+                }
+                chain.append(short_recipe)
                 break
         
         # If combine ingredients is set and there are more than one
