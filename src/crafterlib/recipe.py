@@ -81,22 +81,20 @@ class Recipe:
         --
             item_name: The name of the item you want to craft.
             amount: The total number of said item you want crafted.
-        --
+
         Returns
         --
             The amount of crafts needed to get N amount of item, example: `4`
-        --
+
         Raises
         --
             TypeError if item_name is not a string, amount is not a integer or game_data is invalid.
             ValueError if amount <= 0, item_name is not produced by this recipe or no recipe exists in game_data  
-        --
 
         Usage
         --
             num_crafts = recipe.get_num_crafts(game_data = game_data, item_name = "Torch", amount = 16)
             should return `4`
-        --
         """
         # Type Checks
         if not hasattr(game_data, "get_recipes_for_item"):
