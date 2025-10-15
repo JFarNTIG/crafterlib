@@ -77,7 +77,7 @@ class GameCraftingData:
     def get_item_by_name(self, item_name: str) -> Optional[Item]:
         return self.item_name_map.get(item_name)
     
-    def get_recipe_by_id(self, id: int) -> Optional[Item]:
+    def get_recipe_by_id(self, id: int) -> Optional[Recipe]:
         return self.recipe_id_map.get(id)
     
     def get_crafting_grid_by_id(self, id: int) -> Optional[CraftingGrid]:
