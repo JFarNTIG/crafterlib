@@ -8,7 +8,7 @@ from crafterlib.recipe import Recipe
 from crafterlib.crafting_grid import CraftingGrid
 from crafterlib.graph import ItemGraph
 
-def _make_item_id_map(items: List[Item]):
+def _make_item_id_map(items: List[Item]) -> Dict[str, Item]:
     item_id_map: Dict[str, Item] = {}
     for item in items:
         existing_item = item_id_map.get(item.id)
@@ -18,7 +18,7 @@ def _make_item_id_map(items: List[Item]):
         item_id_map[item.id] = item
     return item_id_map
 
-def _make_item_name_map(items: List[Item]):
+def _make_item_name_map(items: List[Item]) -> Dict[str, Item]:
     item_name_map: Dict[str, Item] = {}
     for item in items:
         existing_item = item_name_map.get(item.name)
@@ -28,7 +28,7 @@ def _make_item_name_map(items: List[Item]):
         item_name_map[item.name] = item
     return item_name_map
 
-def _make_recipe_id_map(recipes: List[Recipe]):
+def _make_recipe_id_map(recipes: List[Recipe]) -> Dict[str, Recipe]:
     recipe_id_map: Dict[str, Recipe] = {}
     for recipe in recipes:
         existing_recipe = recipe_id_map.get(recipe.id)
@@ -38,7 +38,7 @@ def _make_recipe_id_map(recipes: List[Recipe]):
         recipe_id_map[recipe.id] = recipe
     return recipe_id_map
 
-def _make_crafting_grid_id_map(crafting_grids: List[CraftingGrid]):
+def _make_crafting_grid_id_map(crafting_grids: List[CraftingGrid]) -> Dict[str, CraftingGrid]:
     crafting_grid_id_map: Dict[str, CraftingGrid] = {}
     for crafting_grid in crafting_grids:
         existing_crafting_grid = crafting_grid_id_map.get(crafting_grid.id)
@@ -62,10 +62,10 @@ class GameCraftingData:
         self.item_graph.add_items([item.name for item in items])
         self.item_graph.add_recipes(recipes)
 
-    def num_items(self):
+    def num_items(self) -> int:
         return len(self.items)
     
-    def num_recipes(self):
+    def num_recipes(self) -> int:
         return len(self.recipes)
     
     def num_crafting_grids(self) -> int:
@@ -77,7 +77,7 @@ class GameCraftingData:
     def get_item_by_name(self, item_name: str) -> Optional[Item]:
         return self.item_name_map.get(item_name)
     
-    def get_recipe_by_id(self, id: int) -> Optional[Item]:
+    def get_recipe_by_id(self, id: int) -> Optional[Recipe]:
         return self.recipe_id_map.get(id)
     
     def get_crafting_grid_by_id(self, id: int) -> Optional[CraftingGrid]:
