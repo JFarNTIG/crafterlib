@@ -47,7 +47,7 @@ def get_amount_craftable_with(game_data: GameCraftingData,
                 continue
 
             # Store how many of the ingredient we have.
-            available_ingreds = needed_ingreds.get(ingredients, 0.0)
+            available_ingreds = ingredients.get(needed_ingreds, 0.0)
 
             # Divide available ingredients by how many we need
             # to craft 1 of product, to get how many of product
