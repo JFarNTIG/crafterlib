@@ -29,7 +29,7 @@ def get_amount_craftable_with(game_data: GameCraftingData,
             return 0
         
         # Find items that can be directly crafted into product.
-        predecessors = graph.predecessors(product)
+        predecessors = list(graph.predecessors(product))
 
         # Initialize list to store the number of products that
         # can be crafted from each ingredient.
@@ -62,7 +62,7 @@ def get_amount_craftable_with(game_data: GameCraftingData,
             # return 0.
             return 0.0
         
-        # Otherwise return the minimum amount of products you can craft.
+        # min(possible) minimum amount of products you can craft.
         # Limited by the bottleneck ingredient.
 
         # So if you have 10 sticks and 6 ingots,
@@ -71,4 +71,17 @@ def get_amount_craftable_with(game_data: GameCraftingData,
         # But in total you can only craft 2 pickaxes.
         # Which is why we get the smallest number in the list and
         # return the amount of complete products we can craft
-        return math.floor(min(possible))
+        total_items = min(possible)
+
+        # Determine output count per craft incase you get more
+        # than one item per craft, default is 1
+        output_count = 1
+        for recipe in game_data.recipes:
+            if product in recipe.products:
+                output_count = recipe.products[product]
+                break
+            
+        # Convert amount craftable to lowest whole amount of crafts
+        # then multiply by the amount of product you get from a craft
+        max_crafts = math.floor(total_items / output_count)
+        return max_crafts * output_count
