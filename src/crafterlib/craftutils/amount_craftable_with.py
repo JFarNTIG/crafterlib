@@ -4,6 +4,7 @@ SPDX-License-Identifier: MIT
 """
 from typing import Dict
 from crafterlib import GameCraftingData
+import networkx as nx
 
 def get_amount_craftable_with(game_data: GameCraftingData,
                               ingredients: Dict[str, float],
@@ -21,6 +22,51 @@ def get_amount_craftable_with(game_data: GameCraftingData,
     """
     graph = game_data.item_graph.graph
 
-    # TODO: Finish this implementation.
+    if not recursive:    
+        if product not in graph:
+            # If product isn't even in graph (it can't be crafted), return 0.
+            return 0
+        
+        # Find items that can be directly crafted into product.
+        predecessors = graph.predecessors(product)
 
-    raise NotImplementedError
+        # Initialize list to store the number of products that
+        # can be crafted from each ingredient.
+        # So if you have 10 sticks you could craft 5 pickaxes,
+        # since a pickaxe requires 2 sticks.
+        # And if you have 6 iron Ingots you could craft 2 pickaxes,
+        # since a pickaxe requires 3 ingots.
+        possible = []
+
+        # Iterate over each ingredient.
+        for needed_ingreds in predecessors:
+            # Get the "weight" or number of items needed to craft product.
+            weight = graph.get_edge_data(needed_ingreds, product, {}).get("weight")
+            # Skip if the edge has no valid weight.
+            if weight is None or weight <= 0:
+                continue
+
+            # Store how many of the ingredient we have.
+            available_ingreds = needed_ingreds.get(ingredients, 0.0)
+
+            # Divide available ingredients by how many we need
+            # to craft 1 of product, to get how many of product
+            # we can craft with the available ingredients.
+            
+            # Add this value to possible.
+            possible.append(available_ingreds / weight)
+
+        if not possible:
+            # If we couldn't find any availble ingredients,
+            # return 0.
+            return 0.0
+        
+        # Otherwise return the minimum amount of products you can craft.
+        # Limited by the bottleneck ingredient.
+
+        # So if you have 10 sticks and 6 ingots,
+        # You could craft 5 pickaxes with the sticks and
+        # 2 pickaxes with the ingots.
+        # But in total you can only craft 2 pickaxes.
+        # Which is why we get the smallest number in the list.
+        return min(possible)
