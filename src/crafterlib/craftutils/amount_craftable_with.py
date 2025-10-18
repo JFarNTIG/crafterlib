@@ -2,6 +2,7 @@
 
 SPDX-License-Identifier: MIT
 """
+import math
 from typing import Dict
 from crafterlib import GameCraftingData
 import networkx as nx
@@ -68,5 +69,6 @@ def get_amount_craftable_with(game_data: GameCraftingData,
         # You could craft 5 pickaxes with the sticks and
         # 2 pickaxes with the ingots.
         # But in total you can only craft 2 pickaxes.
-        # Which is why we get the smallest number in the list.
-        return min(possible)
+        # Which is why we get the smallest number in the list and
+        # return the amount of complete products we can craft
+        return math.floor(min(possible))
