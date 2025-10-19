@@ -27,8 +27,8 @@ def test_craftable_non_recursive_missing_ingredient():
 
     # Dough requires 2x Flour and 2x Water
     # So with only 10x Flour, we can't make dough at all
-    ingredients = {"Flour": 10}
-    assert get_amount_craftable_with(game_data, ingredients, "Dough", recursive=False) == pytest.approx(0)
+    ingredients = {"Flour": 10, "Peperoni": 2}
+    assert get_amount_craftable_with(game_data, ingredients, "Dough", recursive=False) == 0
 
 def test_craftable_zero_ingredients():
     game_data = load_data_for_game("test_game", "test_data")
@@ -39,7 +39,7 @@ def test_craftable_zero_ingredients():
 def test_craftable_non_recursive_bottleneck():
     game_data = load_data_for_game("test_game", "test_data")
 
-    # 10 Flour, but only 4 Water, limits us to only 2 Dough
+    # 10x Flour, but only 4x Water, limits us to only 2x Dough
     ingredients = {"Flour": 10, "Water": 4}
     assert get_amount_craftable_with(game_data, ingredients, "Dough", recursive=False) == pytest.approx(2)
 
@@ -48,12 +48,18 @@ def test_craftable_non_recursive_multi_output():
 
     # 1x Vinegar + 3x Milk = 2x Cheese
 
+    # 3x Vinegar and 6x Milk limits us to being able to craft
+    # cheese 2 times which returns 4x Cheese
     ingredients = {"Vinegar": 3, "Milk": 6}
     assert get_amount_craftable_with(game_data, ingredients, "Cheese", recursive=False) == pytest.approx(4)
-#
+
+    # 3x Vinegar and 10x Milk lets us craft cheese
+    # 3 times which returns 6x Cheese
     ingredients = {"Vinegar": 3, "Milk": 10}
     assert get_amount_craftable_with(game_data, ingredients, "Cheese", recursive=False) == pytest.approx(6)
-#
+
+    # 3x Vinegar and 5x Milk limits us to craft cheese
+    # 1x time which returns 2 cheese.
     ingredients = {"Vinegar": 3, "Milk": 5}
     assert get_amount_craftable_with(game_data, ingredients, "Cheese", recursive=False) == pytest.approx(2)
 
