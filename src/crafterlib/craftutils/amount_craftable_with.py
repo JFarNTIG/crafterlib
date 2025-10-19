@@ -51,9 +51,12 @@ def get_amount_craftable_with(game_data: GameCraftingData,
         # to craft 1 of product, to get how many of product
         # we can craft with the available ingredients.
 
+        # If recursive is True and we don't have enough of 
+        # a needed ingredient, call the function again with the
+        # needed ingredient as the product and add the crafted ingredient
+        # to our available ingredients.
         if recursive and available_ingreds < weight:
-           craftable_ingreds = get_amount_craftable_with(game_data, ingredients, needed_ingreds, recursive=True)
-           available_ingreds += craftable_ingreds
+           available_ingreds += get_amount_craftable_with(game_data, ingredients, needed_ingreds, recursive=True)
         
         # Add this value to possible.
         possible.append(available_ingreds/weight)
