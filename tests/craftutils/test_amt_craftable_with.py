@@ -144,10 +144,4 @@ def test_craftable_product_not_in_graph():
     ingredients = {"Flour": 10}
     # "Bread" does not exist in the crafting graph
     assert get_amount_craftable_with(game_data, ingredients, "Bread", recursive=False) == 0
-
-
-
-
-
-
-
+    
