@@ -59,7 +59,7 @@ def get_amount_craftable_with(game_data: GameCraftingData,
            available_ingreds += get_amount_craftable_with(game_data, ingredients, needed_ingreds, recursive=True)
         
         # Add this value to possible.
-        possible.append(available_ingreds/weight)
+        possible.append(available_ingreds / weight)
     if not possible:
         # If we couldn't find any availble ingredients,
         # return 0.
@@ -84,5 +84,5 @@ def get_amount_craftable_with(game_data: GameCraftingData,
         
     # Convert amount craftable to lowest whole amount of crafts
     # then multiply by the amount of product you get from a craft
-    max_crafts = math.floor(total_items/output_count)
+    max_crafts = math.floor(total_items / output_count)
     return max_crafts * output_count
