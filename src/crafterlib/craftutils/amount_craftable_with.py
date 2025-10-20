@@ -61,7 +61,7 @@ def get_amount_craftable_with(game_data: GameCraftingData,
         # Add this value to possible.
         possible.append(available_ingreds / weight)
     if not possible:
-        # If we couldn't find any availble ingredients,
+        # If we couldn't find any available ingredients,
         # return 0.
         return 0
     
