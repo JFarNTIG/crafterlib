@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "mob": "Zombie",
+        "common_drops": ["0-2 Rotten Flesh"],
+        "rare_drops": ["1 Iron Ingot 0,83%", "1 Carrot 0,83%", "1 Potato 0,83%", "Baked Potato if killed while on fire 0,83%", "1 Zombie head if killed by a charged creeper"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Armor and tools 8,5% if killed by a player or a wolf"]
+    },
+
+    {
+        "id": 2,
+        "mob": "Husk",
+        "common_drops": ["0-2 Rotten Flesh"],
+        "rare_drops": ["1 Iron Ingot 0,83%", "1 Carrot 0,83%", "1 Potato 0,83%", "Baked Potato if killed while on fire 0,83%"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Armor and tools 8,5% if killed by a player or a wolf"]
+    },
+
+    {
+        "id": 3,
+        "mob": "Zombie villager",
+        "common_drops": ["0-2 Rotten Flesh"],
+        "rare_drops": ["1 Iron Ingot 0,83%", "1 Carrot 0,83%", "1 Potato 0,83%", "Baked Potato if killed while on fire 0,83%"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Armor and tools 8,5% if killed by a player or a wolf"]
+    },
+
+    {
+        "id": 4,
+        "mob": "Drowned",
+        "common_drops": ["0-2 Rotten Flesh"],
+        "rare_drops": ["1 Copper Ingot 11%"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Trident 8,5%", "Fishing Rod 8,5%", "Nautilus Shell 100%", "Armor 8,5% if killed by a player"]
+    },
+
+    {
+        "id": 5,
+        "mob": "Skeleton",
+        "common_drops": ["0-2 Arrow", "0-2 Bone"],
+        "rare_drops": ["1 Skeleton Skull if killed by a charged creeper"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Bow 8,5%", "Armor 8,5% if killed by a player or a wolf"]
+    },
+
+    {
+        "id": 6,
+        "mob": "Stray",
+        "common_drops": ["0-2 Arrow", "0-2 Bone", "0-1 Arrow Of Slowness"],
+        "rare_drops": ["None"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Bow 8,5%", "Armor 8,5% if killed by a player or a wolf"]
+    },
+
+    {
+        "id": 7,
+        "mob": "Bogged",
+        "common_drops": ["0-2 Arrow", "0-2 Bone", "0-1 Arrow Of Posion"],
+        "rare_drops": ["None"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Bow 8,5%", "Armor 8,5% if killed by a player or a wolf"]
+    },
+
+    {
+        "id": 8,
+        "mob": "Creeper",
+        "common_drops": ["0-2 Gunpowder"],
+        "rare_drops": ["1 Random Music Disc if killed my a skeletons arrow", "1 Creeper Head if killed by a charged creeper"],
+        "farm_drops": ["None"],
+        "equipped_items": ["None"]
+    },
+
+    {
+        "id": 9,
+        "mob": "Cow",
+        "common_drops": ["1-3 Raw Beef", "0-2 Leather"],
+        "rare_drops": ["1-3 Steak if killed while on fire"],
+        "farm_drops": ["Milk Bucket if a Bucket is used on it"],
+        "equipped_items": ["None"]
+    },
+
+    {
+        "id": 10,
+        "mob": "Sheep",
+        "common_drops": ["1-2 Raw Mutton", "1 Wool if not sheared"],
+        "rare_drops": ["1-2 Cooked Mutton if killed while on fire"],
+        "farm_drops": ["1-3 Wool if sheared"],
+        "equipped_items": ["None"]
+    },
+
+    {
+        "id": 11,
+        "mob": "Pig",
+        "common_drops": ["1-3 Raw Porkchop"],
+        "rare_drops": ["1-3 Cooked Porkchop if killed while on fire"],
+        "farm_drops": ["None"],
+        "equipped_items": ["Saddle if equipped"]
+    },
+
+    {
+        "id": 12,
+        "mob": "Chicken",
+        "common_drops": ["0-2 Feather", "1 Raw Chicken"],
+        "rare_drops": ["1 Cooked Chicken if killed while on fire"],
+        "farm_drops": ["1 Egg every 5-10 minutes"],
+        "equipped_items": ["None"]
+    },
+
+    {
+        "id": 13,
+        "mob": "Iron Golem",
+        "common_drops": ["3-5 Iron ingot", "0-2 Poppy"],
+        "rare_drops": ["None"],
+        "farm_drops": ["None"],
+        "equipped_items": ["None"]
+    }
+
+]
