@@ -95,7 +95,7 @@
         "common_drops": ["1-3 Raw Porkchop"],
         "rare_drops": ["1-3 Cooked Porkchop if killed while on fire"],
         "farm_drops": ["None"],
-        "equipped_items": ["Saddle if equipped"]
+        "equipped_items": ["Saddle"]
     },
 
     {
