@@ -9,14 +9,26 @@ class Mob:
                  rare_drops: Set[str],
                  farm_drops: Set[str],
                  equipped_items: Set[str]):
+        # identifier for the mob class
         self.id=id
+
+        # name of the mob
         self.mob=mob
+
+        # items the mob commonly drops
         self.common_drops=common_drops
+
+        # items the mob rarely drops
         self.rare_drops=rare_drops
+
+        # items dropped when the mob is farmed
         self.farm_drops=farm_drops
+
+        # items the mob has equipped
         self.equipped_items=equipped_items
     
     def to_dict(self) -> Dict[str, Any]:
+        # convert the mob data into a dictionary for JSON serialization.
         return {
             "id": self.id,
             "mob": self.mob,
@@ -28,9 +40,10 @@ class Mob:
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Mob":
+        # create a Mob instance from a dictionary
         return cls(
-            id=data.get("id", -1),
-            mob=data.get("mob", ""),
+            id=data.get("id", -1), # fallback ID if missing
+            mob=data.get("mob", ""), # empty string if name missing
             common_drops=set(data.get("common_drops", [])),
             rare_drops=set(data.get("rare_drops", [])),
             farm_drops=set(data.get("farm_drops", [])),
@@ -38,6 +51,8 @@ class Mob:
         )
 
     def __hash__(self):
+        # enables using Mob objects in sets or as dictionary keys.
+        # hash is based solely on the mob's ID.
         return hash(self.id)
     
     def __repr__(self) -> str:
