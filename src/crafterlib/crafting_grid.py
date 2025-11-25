@@ -29,6 +29,14 @@ class CraftingGrid:
         """
         return product in self.products
     
+    def to_dict(self) -> Dict[str, Any]:
+        """Return a representation of the item as a dictionary."""
+        return {
+            "id": self.id,
+            "products": self.products,
+            "crafting_coordinates": self.crafting_coordinates
+        }
+    
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "CraftingGrid":
         """
@@ -49,3 +57,5 @@ class CraftingGrid:
             products=data.get("products", {}),
             crafting_coordinates=data.get("crafting_coordinates", {})
         )
+    
+    
