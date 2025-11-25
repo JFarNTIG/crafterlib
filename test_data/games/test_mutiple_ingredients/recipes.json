@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Flour": 15,
+            "Water": 0.5,
+            "Meat": 9,
+            "Milk": 7,
+            "Salt": 4,
+            "Vinegar": 1
+
+        },
+        "products": {
+            "Dough": 1
+        }
+    }
+]
+
+
+
+

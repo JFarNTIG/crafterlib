@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name": "Flour",
+        "sources": []
+    },
+    {
+        "id": 2,
+        "name": "Water",
+        "sources": []
+    },
+    {
+        "id": 3,
+        "name": "Dough",
+        "sources": []
+    },
+    {
+        "id": 4,
+        "name": "Meat",
+        "sources": []
+    },
+    {
+        "id": 5,
+        "name": "Salt",
+        "sources": []
+    },
+    {
+        "id": 6,
+        "name": "Pepperoni",
+        "sources": []
+    },
+    {
+        "id": 7,
+        "name": "Milk",
+        "sources": []
+    },
+    {
+        "id": 8,
+        "name": "Vinegar",
+        "sources": []
+    },
+    {
+        "id": 9,
+        "name": "Cheese",
+        "sources": []
+    },
+    {
+        "id": 10,
+        "name": "Tomato",
+        "sources": []
+    },
+    {
+        "id": 11,
+        "name": "Basil",
+        "sources": []
+    },
+    {
+        "id": 12,
+        "name": "Pizza Sauce",
+        "sources": []
+    },
+    {
+        "id": 13,
+        "name": "Pepperoni Pizza",
+        "sources": []
+    }
+]

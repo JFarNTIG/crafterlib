@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Flour": 2
+        },
+        "products": {
+            "Dough": 1
+        }
+    }
+]
+
+
+
+
