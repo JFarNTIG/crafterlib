@@ -92,21 +92,11 @@ class ItemGraph:
 
         if self.graph.number_of_edges() == 0:
             return 0
-        
         connections = []
-        
         for edge in self.graph.edges(data=True):
             connections.append(self.graph.get_edge_data(*edge)["weight"])
-
-    
-        
         return max(connections)
 
-
-
-
-        
-    
     def min_ingredient_amount(self) -> float:
         """Get the min ingredient amount.
 
@@ -117,15 +107,10 @@ class ItemGraph:
         """
 
         if self.graph.number_of_edges() == 0:
-            return 0
-        
+            return 0 
         connections = []
-        
         for edge in self.graph.edges(data=True):
             connections.append(self.graph.get_edge_data(*edge)["weight"])
-
-    
-        
         return min(connections)
    
 
