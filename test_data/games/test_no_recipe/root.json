@@ -1,0 +1,9 @@
+{
+    "game": "Pizza making",
+    "item_files": [
+        "items.json"
+    ],
+    "recipe_files": [
+        "recipes.json"
+    ]
+}

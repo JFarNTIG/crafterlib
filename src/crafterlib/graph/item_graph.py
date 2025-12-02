@@ -89,9 +89,14 @@ class ItemGraph:
         0.25x Planks -> 1x Sticks,
         then the max ingredient amount would be 3.
         """
-        # TODO: Finish this implementation.
-        raise NotImplementedError
-    
+
+        if self.graph.number_of_edges() == 0:
+            return 0
+        connections = []
+        for edge in self.graph.edges(data=True):
+            connections.append(self.graph.get_edge_data(*edge)["weight"])
+        return max(connections)
+
     def min_ingredient_amount(self) -> float:
         """Get the min ingredient amount.
 
@@ -100,5 +105,15 @@ class ItemGraph:
         0.25x Planks -> 1x Sticks,
         then the min ingredient amount would be 0.25.
         """
-        # TODO: Finish this implementation.
-        raise NotImplementedError
+
+        if self.graph.number_of_edges() == 0:
+            return 0 
+        connections = []
+        for edge in self.graph.edges(data=True):
+            connections.append(self.graph.get_edge_data(*edge)["weight"])
+        return min(connections)
+   
+
+
+
+
