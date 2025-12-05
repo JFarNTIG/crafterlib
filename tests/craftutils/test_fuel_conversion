@@ -1,0 +1,31 @@
+"""Unit tests for fuel conversion functions in crafterlib.
+
+SPDX-License-Identifier: MIT
+"""
+import pytest
+from crafterlib import load_data_for_game
+from crafterlib.craftutils.fuel_conversion import convert_coal_to_fuel, describe_fuel_conversion
+
+def test_convert_coal_to_fuel_valid():
+    crafting_data = load_data_for_game("minecraft")
+    print("Crafting data fuels:", crafting_data.fuels)
+    # Coal to Logs
+    result = convert_coal_to_fuel("minecraft", "Logs", 1.0)
+    expected = 1.0 * (crafting_data.fuels["Coal"] / crafting_data.fuels["Logs"])
+    print(f"Result: {result}, Expected: {expected}")
+    assert result == expected
+
+def test_convert_coal_to_fuel_invalid():
+    with pytest.raises(ValueError):
+        convert_coal_to_fuel("minecraft", "InvalidFuel", 1.0)
+
+def test_describe_fuel_conversion_string():
+    description = describe_fuel_conversion("minecraft", "Planks", 0.5)
+    assert "0.5 coal" in description
+    assert "planks" in description.lower()
+
+def test_all_fuels_exist():
+    """Make sure all fuels in the JSON have positive burn times"""
+    crafting_data = load_data_for_game("minecraft")
+    for fuel, burn_time in crafting_data.fuels.items():
+        assert burn_time > 0

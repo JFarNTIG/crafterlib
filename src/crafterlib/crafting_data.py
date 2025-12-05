@@ -48,12 +48,18 @@ class GameCraftingData:
         self.item_graph = ItemGraph()
         self.item_graph.add_items([item.name for item in items])
         self.item_graph.add_recipes(recipes)
+        self.fuels: Dict[str, int] = {}
 
     def num_items(self):
         return len(self.items)
     
     def num_recipes(self):
         return len(self.recipes)
+    
+    def get_fuel_burn_time(self, item_name: str) -> Optional[int]:
+        """Return the burn time for a given item, if it exists."""
+        return self.fuels.get(item_name)
+    
     
     def get_item_by_id(self, id: int) -> Optional[Item]:
         return self.item_id_map.get(id)

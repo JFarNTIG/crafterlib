@@ -76,17 +76,57 @@ def load_data_for_game(
         file_path = subdir / filename
         with file_path.open("r", encoding="utf-8") as fp:
             item_data = json.load(fp)
-
         item_handler(item_data)
 
     for filename in recipe_files:
         file_path = subdir / filename
         with file_path.open("r", encoding="utf-8") as fp:
             recipe_data = json.load(fp)
-
         recipe_handler(recipe_data)
 
     crafting_data = GameCraftingData(game_name, items, recipes)
+
+    """Try to load fuels for this game"""
+    try:
+        fuel_data = load_fuel_data(game, root_dir)
+        valid_fuels = {}
+        for name, burn_time in fuel_data.items():
+            item = crafting_data.get_item_by_name(name)
+            if item:
+                valid_fuels[item.name] = burn_time
+            else:
+                valid_fuels[name] = burn_time
+        crafting_data.fuels = valid_fuels
+    except FileNotFoundError:
+        crafting_data.fuels = {}
+
     _crafting_data_cache[game] = crafting_data
     return crafting_data
 
+
+def load_fuel_data(game: str, root_dir: str | Path | NoneType = None) -> dict[str, float]:
+    """Load fuel burn values for the given game.
+
+    Parameters
+    ---
+    game : str
+        The game to load fuel data for, e.g. "minecraft".
+    root_dir : str | Path | None
+        Optional root directory override. If None, loads from crafterlib's built-in data.
+
+    Returns
+    ---
+    dict[str, float]
+        Dictionary mapping fuel names to how many items they can smelt.
+    """
+    if root_dir is not None:
+        subdir = Path(root_dir) / "games" / game
+    else:
+        subdir = resources.files("crafterlib").joinpath("data", "games", game)
+
+    fuel_path = subdir / "fuels.json"
+    if not fuel_path.exists():
+        raise FileNotFoundError(f"No fuels.json found for game {game}")
+
+    with fuel_path.open("r", encoding="utf-8") as fp:
+        return json.load(fp)

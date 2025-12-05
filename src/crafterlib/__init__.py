@@ -4,7 +4,7 @@ SPDX-License-Identifier: MIT
 """
 from importlib.metadata import version as _v
 
-__all__ = ["Item", "Recipe", "ItemGraph", "GameCraftingData", "load_data_for_game", "utils"]
+__all__ = ["Item", "Recipe", "ItemGraph", "GameCraftingData", "load_data_for_game", "utils", "FuelConverter"]
 __version__ = _v(__name__)
 
 from crafterlib.item import Item

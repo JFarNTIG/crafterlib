@@ -28,4 +28,16 @@ def test_load_data_cached():
     # We can test if two variables refer to the same object
     # with the `is` operator in Python.
     assert game_data is game_data_2
+
+def test_fuels_loaded():
+    game_data = load_data_for_game("minecraft")
     
+    # Basic check: Coal should exist
+    assert "Coal" in game_data.fuels
+    assert game_data.get_fuel_burn_time("Coal") == game_data.fuels["Coal"]
+    
+    # Check other fuels
+    for fuel in ["Logs", "Planks", "Charcoal", "Lava Bucket"]:
+        burn_time = game_data.get_fuel_burn_time(fuel)
+        assert burn_time is not None
+        assert burn_time > 0    
