@@ -67,28 +67,12 @@ def make_crafting_plan(game_data: GameCraftingData,
     subgraph = graph.subgraph(nodes)
     ordered_items = list(nx.topological_sort(subgraph))
 
-    # Reverse the order so we can calculate the exact requirements
-    # for each item's ingredients.
-    for item in reversed(ordered_items):
-        amount = required.get(item, 0)
-
-        if amount == 0:
-            continue
-
-        for ingredient, amount_per_output in (
-            game_data.item_graph.get_recipe_for(item).items()
-        ):
-            required[ingredient] = (
-                required.get(ingredient, 0)
-                + amount * amount_per_output
-            )
-
     ingredients: Dict[str, float] = {}
     leftovers: Dict[str, float] = {}
 
-    # Round each required amount to the amount that must actually be gathered
-    # or crafted, and store anything produced beyond the requirement as a leftover.
-    for item in ordered_items:
+    # Process products before their prerequisites so each prerequisite 
+    # is calculated from the actual amount that will be produced.
+    for item in reversed(ordered_items):
         required_amount = required.get(item, 0)
 
         if required_amount == 0:
@@ -101,6 +85,12 @@ def make_crafting_plan(game_data: GameCraftingData,
             product_amount = recipe.products[item]
             num_crafts = math.ceil(required_amount / product_amount)
             actual_amount = num_crafts * product_amount
+
+            for ingredient, amount_per_craft in recipe.ingredients.items():
+                required[ingredient] = (
+                    required.get(ingredient, 0)
+                    + num_crafts * amount_per_craft
+                )
         else:
             actual_amount = math.ceil(required_amount)
 
@@ -111,4 +101,16 @@ def make_crafting_plan(game_data: GameCraftingData,
         if leftover > 0:
             leftovers[item] = leftover
 
-    return CraftingPlan(ingredients, leftovers)
+    ordered_ingredients = {
+        item: ingredients[item]
+        for item in ordered_items
+        if item in ingredients
+    }
+
+    ordered_leftovers = {
+        item: leftovers[item]
+        for item in ordered_items
+        if item in leftovers
+    }
+
+    return CraftingPlan(ordered_ingredients, ordered_leftovers)
