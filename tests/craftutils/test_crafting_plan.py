@@ -34,7 +34,7 @@ def test_single_crafted_item():
     }
     assert plan.leftovers == {}
 
-def test_batch_crafting():
+def test_batch_crafting_with_leftover():
     game_data = load_data_for_game("test_game", "test_data")
 
     # Cheese requires 3x Milk and 1x Vinegar and produces 2x Cheese.
@@ -50,7 +50,54 @@ def test_batch_crafting():
         "Cheese": 1,
     }
 
-def test_recursive_crafting():
+def test_batch_crafting_no_leftovers():
+
+    game_data = load_data_for_game("test_game", "test_data")
+
+    # Two Cheese exactly matches one recipe batch, so no leftover is produced.
+    plan = make_crafting_plan(game_data, {"Cheese": 2})
+
+    assert plan.ingredients == {
+        "Milk": 3,
+        "Vinegar": 1,
+        "Cheese": 2,
+    }
+
+    assert plan.leftovers == {}
+
+def test_multiple_leftovers():
+
+    game_data = load_data_for_game("test_game", "test_data")
+
+    # Extra Pepperoni and Cheese are both required, causing leftovers
+    # from two different batch recipes.
+    plan = make_crafting_plan(
+        game_data,
+        {"Pepperoni Pizza": 1, "Pepperoni": 1, "Cheese": 1},
+    )
+
+    assert plan.ingredients == {
+        "Flour": 4,
+        "Water": 4,
+        "Meat": 1,
+        "Salt": 3,
+        "Milk": 9,
+        "Vinegar": 3,
+        "Tomato": 4,
+        "Basil": 1,
+        "Dough": 2,
+        "Pepperoni": 4,
+        "Cheese": 6,
+        "Pizza Sauce": 1,
+        "Pepperoni Pizza": 1,
+    }
+
+    assert plan.leftovers == {
+        "Pepperoni": 1,
+        "Cheese": 1,
+    }
+
+def test_recursive_crafting_with_leftover():
     game_data = load_data_for_game("test_game", "test_data")
 
     # A Pepperoni Pizza requires Dough, Pepperoni, Cheese, and Pizza Sauce.
@@ -76,7 +123,60 @@ def test_recursive_crafting():
         "Pepperoni": 2,
     }
 
-def test_shared_dependency():
+def test_recursive_crafting_multiple_times_with_leftovers():
+    game_data = load_data_for_game("test_game", "test_data")
+
+    # Three pizzas require several crafting steps and produce
+    # leftover Pepperoni from batch crafting.
+    plan = make_crafting_plan(game_data, {"Pepperoni Pizza": 3})
+
+    assert plan.ingredients == {
+        "Flour": 12,
+        "Water": 12,
+        "Meat": 2,
+        "Salt": 6,
+        "Milk": 18,
+        "Vinegar": 6,
+        "Tomato": 12,
+        "Basil": 3,
+        "Dough": 6,
+        "Pepperoni": 8,
+        "Cheese": 12,
+        "Pizza Sauce": 3,
+        "Pepperoni Pizza": 3,
+    }
+
+    assert plan.leftovers == {
+        "Pepperoni": 2,
+    }
+
+def test_recursive_crafting_multiple_times_no_leftovers():
+
+    game_data = load_data_for_game("test_game", "test_data")
+
+    # Two pizzas require several crafting steps, but every batch is exact,
+    # so the complete recursive plan should have no leftovers.
+    plan = make_crafting_plan(game_data, {"Pepperoni Pizza": 2})
+
+    assert plan.ingredients == {
+        "Flour": 8,
+        "Water": 8,
+        "Meat": 1,
+        "Salt": 3,
+        "Milk": 12,
+        "Vinegar": 4,
+        "Tomato": 8,
+        "Basil": 2,
+        "Dough": 4,
+        "Pepperoni": 4,
+        "Cheese": 8,
+        "Pizza Sauce": 2,
+        "Pepperoni Pizza": 2,
+    }
+
+    assert plan.leftovers == {}
+
+def test_shared_dependency_between_products():
     game_data = load_data_for_game("test_game", "test_data")
 
     # The pizza requires 2x Dough, while the requested products also
@@ -103,6 +203,25 @@ def test_shared_dependency():
     }
     assert plan.leftovers == {
         "Pepperoni": 2,
+    }
+
+def test_shared_crafting_dependency_with_leftovers():
+    game_data = load_data_for_game("minecraft")
+
+    # Fence needs Planks directly and also indirectly through Sticks.
+    plan = make_crafting_plan(game_data, {"Fence": 1})
+
+    assert plan.ingredients == {
+        "Logs": 2,
+        "Planks": 8,
+        "Sticks": 4,
+        "Fence": 3,
+    }
+
+    assert plan.leftovers == {
+        "Planks": 2,
+        "Sticks": 2,
+        "Fence": 2,
     }
 
 def test_zero_amount():
@@ -165,7 +284,7 @@ def test_zero_required_dependency():
         Item(2, "Water", set()),
         Item(3, "Dough", set()),
     ]
-    
+
     # Zero Item is a dependency but requires zero items, so it should be skipped.
     recipes = [
         Recipe(
