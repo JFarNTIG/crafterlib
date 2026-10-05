@@ -282,5 +282,17 @@
         "products": {
             "Redstone Dust": 9
         }
+    },
+    {
+        "id": 1007,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Planks": 4,
+            "Sticks": 2
+        },
+        "products": {
+            "Fence": 3
+        }
     }
 ]

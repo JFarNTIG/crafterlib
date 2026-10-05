@@ -99,5 +99,13 @@
             "Crafting"
         ],
         "requirements": []
+    },
+    {
+        "id": 114,
+        "name": "Fence",
+        "sources": [
+            "Crafting"
+        ],
+        "requirements": []
     }
 ]
