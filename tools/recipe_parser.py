@@ -167,7 +167,7 @@ def recipe_exists(external_recipe: Dict) -> bool:
     
     recipe_dict: Dict[str, List[str]]= {}
     recipe_dict[external_recipe_products] = external_recipe_ingredients
-    print(recipe_dict)
+
     for recipe in recipes_list:
             if recipe == recipe_dict:
                 return True
@@ -508,7 +508,6 @@ def main(external_recipes_path: str) -> None:
     count = 0
     new_recipes: List[NewRecipe] = []
     for external_recipe_file in external_recipes_path.iterdir():
-        print(external_recipe_file)
         count += 1
 
         external_recipe = load_data(external_recipe_file)
@@ -527,7 +526,6 @@ def main(external_recipes_path: str) -> None:
     if len(new_crafting_methods) != 0:
         print(f"Discovered new crafting methods: {new_crafting_methods}")
 
-    print(new_recipes)
     print(f"Amount of recipes in external recipes: {count}")
     print(f"Amount of recipes in crafterlib: {NewRecipe.id}")
 
