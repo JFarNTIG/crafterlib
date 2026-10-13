@@ -1,4 +1,4 @@
-"""Usage, run in terminal: python recipe_parser.py "C:\Path\To\Recipes.json"
+"""Usage, run in terminal: python recipe_parser.py "C:/Path/To/Recipes.json"
 
 This file is part of crafterlib.
 
@@ -17,29 +17,50 @@ from crafterlib.recipe import Recipe
 new_crafting_methods: List[str] = []
 recipes_list: List[Dict] = []
 
-def get_settings() -> int:
-    """Return setting(s) from tools/config.json. 
+class ParseSettings():
+    """Return setting(s) from tools/config.json as an instance.
 
     ***Current adjustable setting(s):***
         - reskins_included: 1 / 0 (True / False)
     
-    Args:
+    Arguments:
         None: call with no input
 
     Returns:
-        int: Reskins (woodtype or colors/dyes) included or not
+        An instance object
+
+    Examples:
+    Fetch settings with ParseSettings._instance.settings:
+        ParseSettings._instance.settings.get("reskins_included"):
+            -> Dict[str, int]: Reskins (woodtype or colors/dyes) included or not
 
     The setting reskins_included can be configured in config.json, by default it is set to 0,
     if given the value 1 it gives the option to include recipes for all woodtypes, 
     which means that instead of just `Planks` or `Door` we can also have `Oak Planks` or `Spruce Door`.
 
-    Note: reskins_included = True has not been fully tested nor implemented.
+    Note: reskins_included = 1 has not been fully tested nor implemented.
     """
-    reskins_included = {"reskins_included", 0}
-    config = load_data("tools/config.json")
-    if config != {}:
-        reskins_included = config.get("reskins_included", 0)
-    return reskins_included
+    _instance = None
+
+    def __init__(self):
+        self.get_settings_from_config()
+
+    @staticmethod
+    def get_instance() -> ParseSettings:
+        """Return instance of setting(s)"""
+        if ParseSettings._instance is None:
+            ParseSettings._instance = ParseSettings()
+
+        return ParseSettings._instance
+
+    def get_settings_from_config(self):
+        """Return setting(s) from config.json"""
+
+        self.settings = load_data("tools/config.json")
+
+        if self.settings == {}:
+            # Default settings
+            self.settings = {"reskins_included", 0}
 
 
 def load_data(file_path: str) -> Dict[str, str | int]:
@@ -72,10 +93,11 @@ def parse_item_name(external_item_name: str) -> str:
         external_item_name: Example `minecraft:acacia_planks`
     
     Returns:
-        item_name: Example get_settings() = False -> `Planks`, get_settings() = True -> `Acacia Planks`
+        item_name: Example reskins_included = 0 -> `Planks`, 
+            reskins_included = 1 -> `Acacia Planks`
 
     Examples:
-        | **``external_item_name`` -> ``if get_settings() = False``, ``if get_settings() = True``**
+        | **``external_item_name`` -> ``if reskins_included = 0``, ``if reskins_included = 1``**
         | -``minecraft:acacia_planks`` -> ``Planks``, ``Acacia Planks``
         | -``minecraft:tuff_brick_slab`` -> ``Tuff Brick Slab``, ``Tuff Brick Slab``
         | -``minecraft:light_blue_dye`` -> ``Light Blue Dye``, ``Light Blue Dye``
@@ -118,7 +140,7 @@ def parse_item_name(external_item_name: str) -> str:
     ]
 
     # Removal of reskins of items
-    if get_settings() == 0:
+    if ParseSettings._instance.settings.get("reskins_included") == 0:
         for woodtype in woodtypes:
             if woodtype in external_item_name and "block" not in external_item_name:
                 item_name = (((external_item_name.split(":")[1]).replace(f"{woodtype}_", "")).replace("_", " ")).title()
@@ -505,6 +527,9 @@ def main(external_recipes_path: str) -> None:
     Loop through folder containing recipes, check if it exists or not and if not add it to recipes.json
     """
     # TODO (hiiemari, 2026-10-14) Write docstring
+    # Fetch settings and create an instance for easy access
+    ParseSettings.get_instance()
+
     count = 0
     new_recipes: List[NewRecipe] = []
     for external_recipe_file in external_recipes_path.iterdir():
