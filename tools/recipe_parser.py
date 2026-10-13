@@ -5,7 +5,7 @@ SPDX-License-Identifier: MIT
 import json
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 import numpy as np
 
@@ -14,7 +14,7 @@ from crafterlib.recipe import Recipe
 new_crafting_methods: List[str] = []
 recipes_list: List[Dict] = []
 
-def get_settings() -> bool:
+def get_settings() -> int:
     """Return setting(s) from tools/config.json. 
 
     ***Current adjustable setting(s):***
@@ -24,20 +24,22 @@ def get_settings() -> bool:
         None: call with no input
 
     Returns:
-        boolean: Reskins (woodtype or colors/dyes) included or not
+        int: Reskins (woodtype or colors/dyes) included or not
 
     The setting reskins_included can be configured in config.json, by default it is set to 0,
     if given the value 1 it gives the option to include recipes for all woodtypes, 
     which means that instead of just `Planks` or `Door` we can also have `Oak Planks` or `Spruce Door`.
 
-    Note: reskins_included has not been fully tested nor implemented.
+    Note: reskins_included = True has not been fully tested nor implemented.
     """
+    reskins_included = {"reskins_included", 0}
     config = load_data("tools/config.json")
-    reskins_included = config["reskins_included"]
+    if config != {}:
+        reskins_included = config.get("reskins_included", 0)
     return reskins_included
 
 
-def load_data(file_path: str) -> Dict | False:
+def load_data(file_path: str) -> Dict[str, str | int]:
     """ Return ``Dict`` from a JSON file with the path *file_path*
 
     Args:
@@ -45,7 +47,6 @@ def load_data(file_path: str) -> Dict | False:
 
     Returns:
         dict: If the file could be loaded correctly, returns a dictionary containing data from the file.
-        False: If the file could not be loaded correctly.
 
     If the file could not be loaded correctly, prints out the error that occurred.
     """
@@ -58,7 +59,7 @@ def load_data(file_path: str) -> Dict | False:
     except (FileNotFoundError, IsADirectoryError, PermissionError, json.JSONDecodeError) as e:
         print(f"An error occurred: {e}")
 
-        return False
+        return {}
 
 
 def parse_item_name(external_item_name: str) -> str:
@@ -113,8 +114,8 @@ def parse_item_name(external_item_name: str) -> str:
         "yellow",
     ]
 
-    #removal of reskins of items
-    if get_settings() == False:
+    # Removal of reskins of items
+    if get_settings() == 0:
         for woodtype in woodtypes:
             if woodtype in external_item_name and "block" not in external_item_name:
                 item_name = (((external_item_name.split(":")[1]).replace(f"{woodtype}_", "")).replace("_", " ")).title()
@@ -127,6 +128,7 @@ def parse_item_name(external_item_name: str) -> str:
 
                 return item_name
 
+    # If external_item_name does not have a reskin
     item_name = ((external_item_name.split(":")[1]).replace("_", " ")).title()
 
     return item_name
@@ -315,7 +317,7 @@ class NewRecipe(Recipe):
 
         if "crafting" in external_recipe["type"]:
             if "key" in external_recipe:
-                matrix = np.array([[0,0,0],[0,0,0],[0,0,0]])
+                matrix = np.array([[0, 0, 0], [0, 0, 0], [0, 0, 0]])
                 # Where chr in pattern -> 1, else -> 0
                 for i, row in enumerate(external_recipe["pattern"]):
                     for j in range(len(row)):
@@ -497,17 +499,17 @@ def add_to_recipes_file(new_recipes: List[NewRecipe]) -> None:
 
 def main(external_recipes_path: str) -> None:
     """
-    #TODO (hiiemari, 2026-10-14) Write docstring
-
     Loop through folder containing recipes, check if it exists or not and if not add it to recipes.json
     """
+    # TODO (hiiemari, 2026-10-14) Write docstring
     count = 0
     new_recipes: List[NewRecipe] = []
     for external_recipe_file in external_recipes_path.iterdir():
+        print(external_recipe_file)
         count += 1
 
         external_recipe = load_data(external_recipe_file)
-        if external_recipe == False:
+        if external_recipe == {}:
             continue
 
         new_recipe = parse_data(external_recipe)
