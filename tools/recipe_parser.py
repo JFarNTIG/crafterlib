@@ -1,7 +1,10 @@
-"""This file is part of crafterlib.
+"""Usage, run in terminal: python recipe_parser.py "C:\Path\To\Recipes.json"
+
+This file is part of crafterlib.
 
 SPDX-License-Identifier: MIT
 """
+import sys
 import json
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
@@ -528,7 +531,7 @@ def main(external_recipes_path: str) -> None:
     print(f"Amount of recipes in external recipes: {count}")
     print(f"Amount of recipes in crafterlib: {NewRecipe.id}")
 
-# Fetch external recipes, right now, from a local directory, should this be in config.json?
-external_recipes_path = Path(r"C:\Users\<USER>\...\mcmeta\data\minecraft\recipe")
+# Fetch external recipes from path given by user
+external_recipes_path = Path(sys.argv[1])
 
 main(external_recipes_path)
