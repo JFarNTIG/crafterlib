@@ -4,9 +4,9 @@ This file is part of crafterlib.
 
 SPDX-License-Identifier: MIT
 """
-import sys
 import json
-from dataclasses import dataclass, field, asdict
+import sys
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Dict, List
 
@@ -17,7 +17,7 @@ from crafterlib.recipe import Recipe
 new_crafting_methods: List[str] = []
 recipes_list: List[Dict] = []
 
-class ParseSettings():
+class ParseSettings:
     """Return setting(s) from tools/config.json as an instance.
 
     ***Current adjustable setting(s):***
@@ -27,7 +27,7 @@ class ParseSettings():
         None: call with no input
 
     Returns:
-        An instance object
+        settings: As a singleton instance
 
     Examples:
     Fetch settings with ParseSettings._instance.settings:
@@ -46,7 +46,7 @@ class ParseSettings():
         self.get_settings_from_config()
 
     @staticmethod
-    def get_instance() -> ParseSettings:
+    def get_instance() -> 'ParseSettings':
         """Return instance of setting(s)"""
         if ParseSettings._instance is None:
             ParseSettings._instance = ParseSettings()
@@ -54,13 +54,12 @@ class ParseSettings():
         return ParseSettings._instance
 
     def get_settings_from_config(self):
-        """Return setting(s) from config.json"""
+        """Load setting(s) from config.json"""
 
         self.settings = load_data("tools/config.json")
 
         if self.settings == {}:
-            # Default settings
-            self.settings = {"reskins_included", 0}
+            self.settings = {"reskins_included", 0} # Default settings
 
 
 def load_data(file_path: str) -> Dict[str, str | int]:
@@ -115,7 +114,7 @@ def parse_item_name(external_item_name: str) -> str:
         "mangrove",
         "pale_oak",
         "oak",
-        "popular",
+        "poplar",
         "spruce",
         "warped",
     ]
@@ -160,7 +159,8 @@ def parse_item_name(external_item_name: str) -> str:
 
 
 def recipe_exists(external_recipe: Dict) -> bool:
-    """Return ``True`` if the product already exists in crafterlib (`recipes.json`), else ``False``.
+    """Return ``True`` if the recipe already exists in recipes_list, 
+    else ``False`` and add it to the list.
 
     Args:
         external_recipe: Dictionary of a recipe from the ./mcmeta/data/minecraft/recipe directory.
@@ -168,8 +168,6 @@ def recipe_exists(external_recipe: Dict) -> bool:
     Returns:
         bool: ``True`` if a match exists, else ``False``.
     """
-    #TODO (hiiemari, 2026-10-12) 
-    global recipes_list
     external_recipe_ingredients: List[str] = []
     external_recipe_products = parse_item_name(external_recipe["result"]["id"])
 
@@ -237,8 +235,6 @@ def crafting_method_implemented(external_recipe: Dict) -> bool:
         'minecraft:crafting_imbue', # Not implemented (easy fix)
         'minecraft:brewing', # Not implemented
     ]
-    
-    global new_crafting_methods
 
     if external_recipe["type"] in implemented:
         if "key" in external_recipe:
@@ -268,7 +264,7 @@ def crafting_method_implemented(external_recipe: Dict) -> bool:
         print(f"New crafting method `{external_recipe['type']}` discovered which has not been implemented!")
         new_crafting_methods.append(external_recipe["type"])
 
-    return new_crafting_methods, False
+    return False
     
 
 @dataclass
@@ -331,15 +327,14 @@ class NewRecipe(Recipe):
             external_recipe: Dictionary of a recipe from the ./mcmeta/data/minecraft/recipe directory.
         
         Returns:
-            dict: Empty if a machine is not needed
+            dict: Empty if a machine is not needed. Otherwise specifies machine.
             
-        Examples: 
-            Torch: {} Empty, pattern is smaller than 2x2 (1x2)
-            Bread: {"Crafting Table": 1} Pattern is bigger than 2x2, (3x1)
-            Bamboo Block: {"Crafting Table": 1} Has more than 2x2 (= 4) items in recipe.
-            Iron Ore: {"Furnace": 1} Crafting method is smelting -> "Furnace" needed.
+        Example:
+            - **Torch**: ``{}`` Empty, pattern is smaller than 2x2 (1x2)
+            - **Bread**: ``{"Crafting Table": 1}`` Pattern is bigger than 2x2, (3x1)
+            - **Bamboo Block**: ``{"Crafting Table": 1}`` Has more than 2x2 (= 4) items in recipe.
+            - **Iron Ore** -> **Iron Ingot**: ``{"Furnace": 1}`` Crafting method is smelting -> "Furnace" needed.
         """
-
         if "crafting" in external_recipe["type"]:
             if "key" in external_recipe:
                 matrix = np.array([[0, 0, 0], [0, 0, 0], [0, 0, 0]])
@@ -455,7 +450,7 @@ def restructure_data(external_recipe: Dict) -> NewRecipe:
         external_recipe: Dictionary of a recipe from the ./mcmeta/data/minecraft/recipe directory.
 
     Returns:
-        NewRecipe(): Object containing data parsed from **external_recipe**.
+        new_recipe: Object containing data parsed from **external_recipe**.
 
     Example:
     |    external_recipe: {
@@ -497,9 +492,16 @@ def restructure_data(external_recipe: Dict) -> NewRecipe:
     return new_recipe
 
 
-def parse_data(external_recipe: Dict) -> NewRecipe | False:
-    """
-    # TODO (hiiemari, 2026-10-14) Write docstring
+def parse_data(external_recipe: Dict) -> NewRecipe:
+    """Check if the recipe-type (crafting method) is supported by this script
+    and if the recipe already exists in the list of new recipes. 
+    If it is supported and it does not exist in the list — parse it.
+
+    Args:
+        external_recipe: Dictionary of a recipe from the ./mcmeta/data/minecraft/recipe directory.
+
+    Returns:
+        new_recipe: Object containing data parsed from **external_recipe**.
     """
     implemented_result = crafting_method_implemented(external_recipe)
 
@@ -509,12 +511,17 @@ def parse_data(external_recipe: Dict) -> NewRecipe | False:
 
             return new_recipe
 
-    return False
-
 
 def add_to_recipes_file(new_recipes: List[NewRecipe]) -> None:
-    # TODO (hiiemari, 2026-10-14) Write docstring
-    # Future plans: replace recipes.json's contents instead of creating a new file
+    """Add new recipes to new_recipes.json
+    Future plans: replace recipes.json's contents instead of new_recipes.json.
+
+    Args:
+        new_recipes: List of new recipes which have been parsed.
+
+    Returns:
+        None:
+    """
     new_recipes_list = [asdict(new_recipe) for new_recipe in new_recipes]
     new_recipes_file = "src/crafterlib/data/games/minecraft/new_recipes.json"
 
@@ -523,10 +530,16 @@ def add_to_recipes_file(new_recipes: List[NewRecipe]) -> None:
 
 
 def main(external_recipes_path: str) -> None:
+    """Loop through external folder (mcmeta) containing recipes, parse it, 
+    add it to crafterlib's recipe file and give a summary of this run.
+
+    Args:
+        external_recipes_path: Path to mcmeta's data (<PATH> + /mcmeta/data/minecraft/recipe), 
+        given as a command line argument.
+    
+    Returns:
+        None:
     """
-    Loop through folder containing recipes, check if it exists or not and if not add it to recipes.json
-    """
-    # TODO (hiiemari, 2026-10-14) Write docstring
     # Fetch settings and create an instance for easy access
     ParseSettings.get_instance()
 
@@ -535,16 +548,16 @@ def main(external_recipes_path: str) -> None:
     for external_recipe_file in external_recipes_path.iterdir():
         count += 1
 
-        external_recipe = load_data(external_recipe_file)
+        external_recipe: Dict = load_data(external_recipe_file)
         if external_recipe == {}:
             continue
 
         new_recipe = parse_data(external_recipe)
 
-        # Check if parsed recipe does not already exist and add it to new_recipes.json
-        if new_recipe != False:
+        # Check if the parsed recipe was returned (qualified) and if it was, add it to new_recipes.
+        if new_recipe != None:
             new_recipes.append(new_recipe)
-        
+
     add_to_recipes_file(new_recipes)
 
     # Summary of new crafting methods found in this run
