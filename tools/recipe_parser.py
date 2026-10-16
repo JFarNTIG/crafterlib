@@ -400,9 +400,10 @@ class NewRecipe(Recipe):
             for key in external_recipe["key"]:
                         key_item = external_recipe["key"][key]
                         if isinstance(key_item, list):
-                            for alternative_recipe_item in key_item:
-                                ingredients_amount = sum(key_in_pattern.count(key[0]) for key_in_pattern in external_recipe["pattern"])   
-                                new_recipe_ingredients[parse_item_name(alternative_recipe_item)] = ingredients_amount
+                            # TODO Implement alternative recipes (like using either charcoal or coal) using some kind of recursion
+                                ingredients_amount = sum(key_in_pattern.count(key[0]) for key_in_pattern in external_recipe["pattern"])
+                                # For now, just take the first alternative item in the list   
+                                new_recipe_ingredients[parse_item_name(key_item[0])] = ingredients_amount
                         else:
                             ingredients_amount = sum(key_in_pattern.count(key[0]) for key_in_pattern in external_recipe["pattern"])   
                             new_recipe_ingredients[parse_item_name(external_recipe["key"][key])] = ingredients_amount
@@ -411,6 +412,7 @@ class NewRecipe(Recipe):
             for ingredient in external_recipe["ingredients"]:
                 if isinstance(ingredient, list):
                     # TODO Implement alternative recipes (like using either charcoal or coal)
+                    # For now, just take the first alternative item in the list
                     ingredient = ingredient[0]
 
                 if ingredient not in new_recipe_ingredients:
