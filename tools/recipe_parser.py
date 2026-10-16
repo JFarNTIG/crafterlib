@@ -138,6 +138,20 @@ def parse_item_name(external_item_name: str) -> str:
         "yellow",
     ]
 
+    if "tool_materials" in external_item_name:
+        if "wooden" in external_item_name:
+            return "Planks"
+
+        if "diamond" in external_item_name:
+            return "Diamond"
+
+        if "stone" in external_item_name:
+            return "Cobblestone"
+
+        item_name = (((external_item_name.split(":")[1]).replace("tool_materials", "Ingot")).replace("_", " ")).title()
+
+        return item_name
+
     # Removal of reskins of items
     if ParseSettings._instance.settings.get("reskins_included") == 0:
         for woodtype in woodtypes:
