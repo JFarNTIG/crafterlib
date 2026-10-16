@@ -1,4 +1,4 @@
-"""Usage, run in terminal: python recipe_parser.py "C:/Path/To/Recipes.json"
+"""Usage, run in terminal: python recipe_parser.py "<PATH>/mcmeta/data/minecraft/recipe"
 
 This file is part of crafterlib.
 
@@ -225,10 +225,10 @@ def crafting_method_implemented(external_recipe: Dict) -> bool:
     implemented: List[str] = [ # Keep track of what is implemented
         'minecraft:crafting_shaped', 
         'minecraft:crafting_shapeless',
+        'minecraft:smelting',
     ]
 
     not_implemented: List[str] = [ # Keep track of what is not implemented
-        'minecraft:smelting', # Not implemented
         'minecraft:stonecutting', # Not implemented (easy fix)
         'minecraft:crafting_transmute', # Not implemented (easy fix)
         'minecraft:campfire_cooking', # Useless (refer to smelting)
@@ -432,6 +432,21 @@ class NewRecipe(Recipe):
                 if ingredient not in new_recipe_ingredients:
                     ingredients_amount = sum(key_in_pattern.count(ingredient) for key_in_pattern in external_recipe["ingredients"])  
                     new_recipe_ingredients[parse_item_name(ingredient)] = ingredients_amount
+
+        elif "ingredient" in external_recipe:
+            if isinstance(external_recipe["ingredient"], list):
+                    # TODO Implement alternative recipes (like smelting down tools to get nuggets)
+                    # For now, just take the first alternative item in the list
+                    ingredient = external_recipe["ingredient"][0]
+
+            else:
+                ingredient = external_recipe["ingredient"]
+
+            new_recipe_ingredients[parse_item_name(ingredient)] = 1
+
+        if "cookingtime" in external_recipe:
+            coal_amount = external_recipe["cookingtime"]/1600
+            new_recipe_ingredients["Coal"] = coal_amount
 
         self.ingredients = new_recipe_ingredients
 
