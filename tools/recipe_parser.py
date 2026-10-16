@@ -531,17 +531,17 @@ def add_to_recipes_file(new_recipes: List[NewRecipe]) -> None:
         json.dump(new_recipes_list, file, indent=2)
 
 
-def main(external_recipes_path: str) -> None:
+def main() -> None:
     """Loop through external folder (mcmeta) containing recipes, parse it, 
     add it to crafterlib's recipe file and give a summary of this run.
 
-    Args:
+    **Command line args:**
         external_recipes_path: Path to mcmeta's data (<PATH> + /mcmeta/data/minecraft/recipe), 
         given as a command line argument.
-    
-    Returns:
-        None:
     """
+    # Fetch external recipes from path given by user
+    external_recipes_path = Path(sys.argv[1])
+    
     # Fetch settings and create an instance for easy access
     ParseSettings.get_instance()
 
@@ -569,7 +569,5 @@ def main(external_recipes_path: str) -> None:
     print(f"Amount of recipes in external recipes: {count}")
     print(f"Amount of recipes in crafterlib: {NewRecipe.id}")
 
-# Fetch external recipes from path given by user
-external_recipes_path = Path(sys.argv[1])
-
-main(external_recipes_path)
+if __name__ == "__main__":
+    main()
