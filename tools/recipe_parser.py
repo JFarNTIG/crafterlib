@@ -138,6 +138,12 @@ def parse_item_name(external_item_name: str) -> str:
         "yellow",
     ]
 
+    base_potions: List[str] = [
+        "awkward",
+        "mundane",
+        "thick",
+    ]
+    
     if "tool_materials" in external_item_name:
         if "wooden" in external_item_name:
             return "Planks"
@@ -152,6 +158,36 @@ def parse_item_name(external_item_name: str) -> str:
 
         return item_name
 
+    if "potion" in external_item_name:
+        if "water" in external_item_name:
+            item_name = "Water Bottle"
+
+        else:
+            potion_effect = ((external_item_name.split(':')[1]).replace("_", " ")).title()
+            if "master" in external_item_name:
+                item_name = f"Potion of the {potion_effect}"
+
+            else:
+                item_name = f"Potion of {potion_effect}"
+
+                for base_potion_name in base_potions:
+                    if base_potion_name in external_item_name:
+                        item_name = f"{potion_effect} Potion"
+
+            if "strong" in external_item_name:
+                item_name = f"{item_name.replace("Strong ", "")} II"
+
+            elif "long" in external_item_name:
+                item_name = f"{item_name.replace("Long ", "")} +"
+
+            if "splash" in external_item_name:
+                item_name = f"Splash {item_name}"
+
+            elif "lingering" in external_item_name:
+                item_name = f"Lingering {item_name}"
+
+        return item_name
+    
     # Removal of reskins of items
     if ParseSettings._instance.settings.get("reskins_included") == 0:
         for woodtype in woodtypes:
@@ -161,7 +197,7 @@ def parse_item_name(external_item_name: str) -> str:
                 return item_name
 
         for color in colors:
-            if color in external_item_name and "dye" not in external_item_name:
+            if color in external_item_name and "dye" not in external_item_name and "slime" not in external_item_name:
                 item_name = (((external_item_name.split(":")[1]).replace(f"{color}_", "")).replace("_", " ")).title()
 
                 return item_name
@@ -183,7 +219,12 @@ def recipe_exists(external_recipe: Dict) -> bool:
         bool: ``True`` if a match exists, else ``False``.
     """
     external_recipe_ingredients: List[str] = []
-    external_recipe_products = parse_item_name(external_recipe["result"]["id"])
+
+    if external_recipe["type"] == "minecraft:brewing":
+        return False
+    
+    if "result" in external_recipe:
+        external_recipe_products = parse_item_name(external_recipe["result"]["id"])
 
     if "ingredients" in external_recipe:
         for ingredient in external_recipe["ingredients"]:
@@ -226,6 +267,7 @@ def crafting_method_implemented(external_recipe: Dict) -> bool:
         'minecraft:crafting_shaped', 
         'minecraft:crafting_shapeless',
         'minecraft:smelting',
+        'minecraft:brewing',
     ]
 
     not_implemented: List[str] = [ # Keep track of what is not implemented
@@ -247,7 +289,6 @@ def crafting_method_implemented(external_recipe: Dict) -> bool:
         'minecraft:crafting_special_repairitem', # Completety useless
         'minecraft:crafting_special_shielddecoration', # Useless
         'minecraft:crafting_imbue', # Not implemented (easy fix)
-        'minecraft:brewing', # Not implemented
     ]
 
     if external_recipe["type"] in implemented:
@@ -326,8 +367,8 @@ class NewRecipe(Recipe):
         if "crafting" in external_recipe["type"]:
             new_recipe_category = "Crafting"
 
-        elif external_recipe["type"] == "minecraft:smelting":
-            new_recipe_category = "Smelting"
+        else:
+            new_recipe_category = parse_item_name(external_recipe["type"])
 
         self.category = new_recipe_category
 
@@ -390,6 +431,9 @@ class NewRecipe(Recipe):
         elif external_recipe["type"] == "minecraft:smelting":
             new_recipe_requirements = {"Furnace": 1}
 
+        elif external_recipe["type"] == "minecraft:brewing":
+            new_recipe_requirements = {"Brewing Stand": 1}
+
         self.requirements = new_recipe_requirements
 
         return self.requirements
@@ -410,7 +454,24 @@ class NewRecipe(Recipe):
         """
         new_recipe_ingredients = {}
 
-        if "key" in external_recipe:
+        if external_recipe["type"] == "minecraft:brewing":
+            #"Awkward Potion": 3¨
+            # Base (Water Bottle, Awkward Potion or some other Potion)
+            base_potion = external_recipe["input"]["potion_contents"]["potions"]
+
+            new_recipe_ingredients[parse_item_name(base_potion)] = 3
+
+            # Reagent (Fermented Spider Eye, Glistering Melon Slice, Glowstone Dust etc..)
+            new_recipe_ingredients[parse_item_name(external_recipe["reagent"]["item"])] = 1
+
+            # Fuel
+            if "Blaze Powder" not in new_recipe_ingredients:
+                new_recipe_ingredients["Blaze Powder"] = 0.05
+
+            else:
+                new_recipe_ingredients["Blaze Powder"] = new_recipe_ingredients["Blaze Powder"] + 0.05
+
+        elif "key" in external_recipe:
             for key in external_recipe["key"]:
                         key_item = external_recipe["key"][key]
                         if isinstance(key_item, list):
@@ -461,16 +522,96 @@ class NewRecipe(Recipe):
         Returns:
             dict: Dictionary of the product created from the recipe and its amount.
         """
-        # If count does not exist, let it be 1
-        if "count" in external_recipe["result"]:
-            products_amount = external_recipe["result"]["count"]
-        else:
-            products_amount = 1
+        if external_recipe["type"] == "minecraft:brewing":
+            external_name = external_recipe["output"]["components"]["minecraft:potion_contents"]["potion"]
+            external_name = f"potion{external_name}"
 
-        new_recipe_products = {parse_item_name(external_recipe["result"]["id"]) : products_amount}
+            # Potion of * II
+            #"potion": "minecraft:strong_healing", glowstone dust, strength
+            #new_recipe_products = {parse_item_name(external_name) : 3}
+            
+            # Potion of * +
+            #"potion": "minecraft:long_strength", redstone dust, duration
+
+            if external_recipe["output"]["id"] == "minecraft:splash_potion":
+                # Splash Potion of *
+                # Splash Mundane Potion" etc
+                # Gunpowder
+                product_name = parse_item_name(f"splash{external_name}")
+
+            elif external_recipe["output"]["id"] == "minecraft:lingering_potion":
+                # Lingering Potion of *
+                #"Lingering Mundane Potion" (water + "anything"), 
+                # "Lingering Awkward Potion" (water + nether warts), 
+                # "Lingering Thick Potion" (water + glowstone)
+                # Dragon's Breath
+                product_name = parse_item_name(f"lingering{external_name}")
+
+            else:
+                product_name = parse_item_name(external_name)
+
+            new_recipe_products = {product_name : 3}
+            #There are: Potion of *, Potion of * II, Potion of * +, Splash Potion of * and Lingering Potion of *
+
+        else:
+            # If count does not exist, let it be 1
+            if "count" in external_recipe["result"]:
+                products_amount = external_recipe["result"]["count"]
+            else:
+                products_amount = 1
+
+            new_recipe_products = {parse_item_name(external_recipe["result"]["id"]) : products_amount}
+        
         self.products = new_recipe_products
 
         return self.products
+
+
+def add_extra_recipes(new_recipes_potions: List[NewRecipe]) -> List[NewRecipe]:
+    """Add missing recipes semi-manually.
+
+    Args:
+        new_recipes_potions: list of new potion recipes
+
+    Returns:
+        List[NewRecipes]: modified version of new_recipes_potions, added missing recipes.
+    """
+    missing_recipes: List[NewRecipe] = []
+
+    water_bottle = NewRecipe(
+        category="Filling", 
+        requirements={"Water Source": 1}, 
+        ingredients={"Glass Bottle": 1}, 
+        products={"Water Bottle": 1},
+        )
+
+    missing_recipes.append(water_bottle)
+
+    splash_water_bottle = NewRecipe(
+        category="Brewing", 
+        requirements={"Brewing Stand": 1}, 
+        ingredients={"Water Bottle": 3, "Gunpowder": 1, "Blaze Powder": 0.05}, 
+        products={"Splash Water Bottle": 3},
+        )
+
+    missing_recipes.append(splash_water_bottle)
+
+    lingering_water_bottle = NewRecipe(
+        category="Brewing", 
+        requirements={"Brewing Stand": 1}, 
+        ingredients={"Splash Water Bottle": 3, "Dragon's Breath": 1, "Blaze Powder": 0.05}, 
+        products={"Lingering Water Bottle": 3},
+        )
+
+    missing_recipes.append(lingering_water_bottle)
+
+    for recipe in missing_recipes:
+        recipe.get_id()
+        new_recipes_potions.append(recipe)
+
+    print(f"Amount of semi-manually added recipes in crafterlib (not existing in external recipes): {len(missing_recipes)}")
+
+    return new_recipes_potions
 
 
 def restructure_data(external_recipe: Dict) -> NewRecipe:
@@ -543,9 +684,9 @@ def parse_data(external_recipe: Dict) -> NewRecipe:
             return new_recipe
 
 
-def add_to_recipes_file(new_recipes: List[NewRecipe]) -> None:
-    """Add new recipes to new_recipes.json
-    Future plans: replace recipes.json's contents instead of new_recipes.json.
+def add_to_recipes_file(new_recipes: List[NewRecipe], file_path: str) -> None:
+    """Add new recipes to new_recipes.json or new_recipes_potions.json
+    Future plans: replace recipes.json's and recipes_potions.json's contents instead of new_recipes.json and new_recipes_potions.json
 
     Args:
         new_recipes: List of new recipes which have been parsed.
@@ -554,9 +695,8 @@ def add_to_recipes_file(new_recipes: List[NewRecipe]) -> None:
         None:
     """
     new_recipes_list = [asdict(new_recipe) for new_recipe in new_recipes]
-    new_recipes_file = "src/crafterlib/data/games/minecraft/new_recipes.json"
 
-    with open(new_recipes_file, 'w', encoding='utf-8') as file:
+    with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(new_recipes_list, file, indent=2)
 
 
@@ -576,7 +716,9 @@ def main() -> None:
 
     count = 0
     new_recipes: List[NewRecipe] = []
-    for external_recipe_file in external_recipes_path.iterdir():
+    new_recipes_potions: List[NewRecipe] = []
+
+    for external_recipe_file in external_recipes_path.rglob("*.json"):
         count += 1
 
         external_recipe: Dict = load_data(external_recipe_file)
@@ -587,9 +729,20 @@ def main() -> None:
 
         # Check if the parsed recipe was returned (qualified) and if it was, add it to new_recipes.
         if new_recipe != None:
-            new_recipes.append(new_recipe)
+            if new_recipe.category == "Brewing":
+                new_recipes_potions.append(new_recipe)
 
-    add_to_recipes_file(new_recipes)
+            else:
+                new_recipes.append(new_recipe)
+
+    # Add 3 potion recipes that don't exist in mcmeta that we should have in crafterlib
+    new_recipes_potions = add_extra_recipes(new_recipes_potions)
+
+    new_recipes_file = "src/crafterlib/data/games/minecraft/new_recipes.json"
+    new_recipes_potions_file = "src/crafterlib/data/games/minecraft/new_recipes_potions.json"
+
+    add_to_recipes_file(new_recipes, new_recipes_file)
+    add_to_recipes_file(new_recipes_potions, new_recipes_potions_file)
 
     # Summary of new crafting methods found in this run
     if len(new_crafting_methods) != 0:
