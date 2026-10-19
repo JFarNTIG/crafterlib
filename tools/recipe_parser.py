@@ -56,7 +56,7 @@ class ParseSettings:
     def get_settings_from_config(self):
         """Load setting(s) from config.json"""
 
-        self.settings = load_data("tools/config.json")
+        self.settings = load_data("tools/recipe_parser/config.json")
 
         if self.settings == {}:
             self.settings = {"reskins_included", 0} # Default settings
