@@ -455,8 +455,7 @@ class NewRecipe(Recipe):
         new_recipe_ingredients = {}
 
         if external_recipe["type"] == "minecraft:brewing":
-            #"Awkward Potion": 3¨
-            # Base (Water Bottle, Awkward Potion or some other Potion)
+            # Base (Water Bottle, Awkward Potion or some other Potion, like Healing)
             base_potion = external_recipe["input"]["potion_contents"]["potions"]
 
             new_recipe_ingredients[parse_item_name(base_potion)] = 3
@@ -468,9 +467,11 @@ class NewRecipe(Recipe):
             if "Blaze Powder" not in new_recipe_ingredients:
                 new_recipe_ingredients["Blaze Powder"] = 0.05
 
+            #If reagent also was Blaze Powder
             else:
                 new_recipe_ingredients["Blaze Powder"] = new_recipe_ingredients["Blaze Powder"] + 0.05
 
+        # Shaped recipes
         elif "key" in external_recipe:
             for key in external_recipe["key"]:
                         key_item = external_recipe["key"][key]
@@ -483,6 +484,7 @@ class NewRecipe(Recipe):
                             ingredients_amount = sum(key_in_pattern.count(key[0]) for key_in_pattern in external_recipe["pattern"])   
                             new_recipe_ingredients[parse_item_name(external_recipe["key"][key])] = ingredients_amount
 
+        # Shapeless recipes
         elif "ingredients" in external_recipe:
             for ingredient in external_recipe["ingredients"]:
                 if isinstance(ingredient, list):
@@ -494,6 +496,7 @@ class NewRecipe(Recipe):
                     ingredients_amount = sum(key_in_pattern.count(ingredient) for key_in_pattern in external_recipe["ingredients"])  
                     new_recipe_ingredients[parse_item_name(ingredient)] = ingredients_amount
 
+        # Smelting recipes
         elif "ingredient" in external_recipe:
             if isinstance(external_recipe["ingredient"], list):
                     # TODO Implement alternative recipes (like smelting down tools to get nuggets)
@@ -526,32 +529,16 @@ class NewRecipe(Recipe):
             external_name = external_recipe["output"]["components"]["minecraft:potion_contents"]["potion"]
             external_name = f"potion{external_name}"
 
-            # Potion of * II
-            #"potion": "minecraft:strong_healing", glowstone dust, strength
-            #new_recipe_products = {parse_item_name(external_name) : 3}
-            
-            # Potion of * +
-            #"potion": "minecraft:long_strength", redstone dust, duration
-
             if external_recipe["output"]["id"] == "minecraft:splash_potion":
-                # Splash Potion of *
-                # Splash Mundane Potion" etc
-                # Gunpowder
                 product_name = parse_item_name(f"splash{external_name}")
 
             elif external_recipe["output"]["id"] == "minecraft:lingering_potion":
-                # Lingering Potion of *
-                #"Lingering Mundane Potion" (water + "anything"), 
-                # "Lingering Awkward Potion" (water + nether warts), 
-                # "Lingering Thick Potion" (water + glowstone)
-                # Dragon's Breath
                 product_name = parse_item_name(f"lingering{external_name}")
 
             else:
                 product_name = parse_item_name(external_name)
 
             new_recipe_products = {product_name : 3}
-            #There are: Potion of *, Potion of * II, Potion of * +, Splash Potion of * and Lingering Potion of *
 
         else:
             # If count does not exist, let it be 1
