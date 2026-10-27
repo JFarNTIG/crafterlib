@@ -63,5 +63,5 @@ for idx, item in enumerate(items):
         }
     )
 
-with open("items_potions.json", "w") as file:
+with open("items.json", "w") as file:
     json.dump(list(item_objs), file, indent=2)
