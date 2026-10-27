@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Sand": 8
+        },
+        "products": {
+            "Glass": 1
+        }
+    },
+    {
+        "id": 2,
+        "category": "Crafting",
+        "requirements": {},
+        "ingredients": {
+            "Glass": 1
+        },
+        "products": {
+            "Sand": 4
+        }
+    }
+]
+
+
+
+

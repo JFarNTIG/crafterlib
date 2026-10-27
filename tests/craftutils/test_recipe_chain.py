@@ -89,21 +89,21 @@ def test_connection_not_found():
 
 
 def test_recyclables():
-    game_data = load_data_for_game("minecraft")
+    game_data = load_data_for_game("test_game_cycles", "test_data")
 
-    # Gold Ingot and Gold Nugget can be crafted into each other
+    # Sand and Glass can be crafted into each other
     # and are therefore each other's ingredients.
-    output = get_recipe_chain(game_data, "Gold Ingot", "Gold Nugget", False)
+    output = get_recipe_chain(game_data, "Sand", "Glass", False)
     assert output == [{
-            "ingredients": { "Gold Ingot": 1 },
-            "products": { "Gold Nugget": 9 }
+            "ingredients": { "Sand": 8 },
+            "products": { "Glass": 1 }
         }]
     
     # Test the other way around
-    output = get_recipe_chain(game_data, "Gold Nugget", "Gold Ingot", False)
+    output = get_recipe_chain(game_data, "Glass", "Sand", False)
     assert output == [{
-            "ingredients": { "Gold Nugget": 9 },
-            "products": { "Gold Ingot": 1 }
+            "ingredients": { "Glass": 1 },
+            "products": { "Sand": 4 }
         }]
     
 def test_equal_recyclables():
@@ -115,31 +115,6 @@ def test_equal_recyclables():
     # since the parameters are the same.
     output = get_recipe_chain(game_data, "Gold Ingot", "Gold Ingot", False)
     assert output == None
-
-def test_combine_ingredients():
-    game_data = load_data_for_game("minecraft")
-
-    # Test with a potion that needs Blaze Powder
-    # in multiple recipes.
-    output = get_recipe_chain(game_data, "Water Bottle", "Splash Potion of Invisibility", True)
-    assert output == [
-        {
-            "ingredients": { "Water Bottle": 3, "Nether Wart": 1, "Blaze Powder": 0.2 },
-            "products": { "Awkward Potion": 3 } 
-        },
-        {
-            "ingredients": { "Awkward Potion": 3, "Golden Carrot": 1 },
-            "products": { "Potion of Night Vision": 3 }
-        },
-        {
-            "ingredients": { "Potion of Night Vision": 3, "Fermented Spider Eye": 1 },
-            "products": { "Potion of Invisibility": 3 }
-        },
-        {
-            "ingredients": { "Potion of Invisibility": 3, "Gunpowder": 1 },
-            "products": { "Splash Potion of Invisibility": 3 }
-        }
-    ]
 
 def test_combine_ingredients_complex():
     game_data = load_data_for_game("test_game3", "test_data")
