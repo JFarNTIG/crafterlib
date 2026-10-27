@@ -1,0 +1,6777 @@
+[
+  {
+    "id": 0,
+    "name": "Long Strength",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Redstone Torch",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Kelp",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Polished Blackstone Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Iron Boots",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Long Turtle Master",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Leather Horse Armor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Lingering Potion of Strength +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Chiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Iron Chain",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Lever",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Redstone Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Waxed Exposed Copper Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Potion of Weaving",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Potion of Weakness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Polished Sulfur Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Stone Shovel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Baked Potato",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Mud Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Anvil",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Splash Potion of Swiftness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Cracked Stone Bricks",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Glass Bottle",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Copper Axe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Chiseled Cinnabar",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Diorite Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Heavy Weighted Pressure Plate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Packed Mud",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Netherite Upgrade Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Allium",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Dripstone Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Furnace Minecart",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Potion of Swiftness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Glow Item Frame",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Lingering Mundane Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Polished Andesite",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Brick",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Brewing Stand",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Freezing",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Shulker Box",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Leaf Litter",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Waxed Weathecopper Chain",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Long Swiftness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Lingering Potion of Night Vision",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Stone Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Lingering Potion of Leaping +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Blackstone Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Book",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Potion of the Turtle Master II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "End Stone Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Golden Spear",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Bookshelf",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Stone Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Resin Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Potion of Weakness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Nether Quartz Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Strong Turtle Master",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Pufferfish",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Sand",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Waxed Oxidized Copper Chain",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Splash Potion of Weakness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Armor Stand",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Lectern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Oxidized Copper Trapdoor",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Weathecopper Lantern",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Lingering Thick Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Diamond Shovel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Mundane",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Copper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Emerald",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Splash Potion of Strength II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Pointed Dripstone",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Waxed Exposed Copper Chain",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Diamond Helmet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Copper Helmet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Weathecopper Golem Statue",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Long Water Breathing",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Music Disc 5",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Polished Deepslate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Daylight Detector",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Leather",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Cobblestone Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Oxidized Copper Lantern",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Smooth Sandstone",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Ladder",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Wheat",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Prismarine Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Eggs",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Smooth Quartz",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Snout Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Map",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Raw Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Potion of Leaping",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Diamond Chestplate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Night Vision",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Amethyst Shard",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Lingering Potion of Poison II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Wool",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Powerail",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Exposed Copper Lantern",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Cobbled Deepslate Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Rabbit Foot",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Tuff Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Chiseled Quartz Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Nether Star",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Torch",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Leather Boots",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Splash Potion of Infested",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Disc Fragment 5",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Strong Healing",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Magenta Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Lingering Potion of Infested",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Wool Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Carrot On A Stick",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Weathecopper Door",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Mossy Stone Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Splash Potion of Fire Resistance",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Chorus Fruit",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Sandstone Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Splash Potion of Slowness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Candle",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Splash Potion of Fire Resistance +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Nether Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "End Stone Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Golden Hoe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Cobbled Deepslate",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Waxed Copper Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Moss Block",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Planks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Oxidized Copper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Oxidized Copper Chest",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Blast Furnace",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Deepslate Tile Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Poppy",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Waxed Oxidized Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Chiseled Deepslate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Mossy Cobblestone Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Golden Dandelion",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Potion of the Turtle Master",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Iron Door",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Polished Deepslate Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Pumpkin Seeds",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Splash Potion of Poison",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Potato",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Slow Falling",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Iron Helmet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Cobweb",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Swiftness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Cyan Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Stone Pressure Plate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Sandstone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Rib Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Glistering Melon Slice",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Flint And Steel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Diorite Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Suspicious Stew",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Lingering Potion of Strength II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Exposed Cut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Detector Rail",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Granite",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Fence Gate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Granite Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Polished Blackstone Button",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Snowball",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 166,
+    "name": "Smooth Sandstone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Copper Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Copper Chain",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Potion of Slow Falling +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 170,
+    "name": "Tuff Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 171,
+    "name": "Lingering Potion of Wind Charged",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 172,
+    "name": "Salmon",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Melon Seeds",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Closed Eyeblossom",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 175,
+    "name": "Glazed Terracotta",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 176,
+    "name": "Sandstone Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 177,
+    "name": "Bolt Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Water",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 179,
+    "name": "Potion of Oozing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 180,
+    "name": "Echo Shard",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 181,
+    "name": "Dandelion",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 182,
+    "name": "Copper Bars",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Ghast Tear",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Tripwire Hook",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Redstone Lamp",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Wooden Hoe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Soul Campfire",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Log",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Banner",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 190,
+    "name": "End Stone Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 191,
+    "name": "Deepslate Iron Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 192,
+    "name": "Nether Brick Fence",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 193,
+    "name": "Deepslate Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 194,
+    "name": "Golden Helmet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Creaking Heart",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Lingering Potion of Oozing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Mossy Cobblestone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Exposed Copper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Saddle",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Waxed Oxidized Copper Golem Statue",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Polished Diorite",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 202,
+    "name": "End Crystal",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Wildflowers",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Gold Nugget",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Weathecopper Chain",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Prismarine Shard",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Smooth Quartz Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Stone Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Cut Sandstone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Rabbit Hide",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Soul Torch",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Cobblestone",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 213,
+    "name": "Charcoal",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Oxidized Copper Golem Statue",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 215,
+    "name": "Prismarine Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Resin Clump",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Waxed Chiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Quartz Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 219,
+    "name": "Cinnabar Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Stone Crafting Materials",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 221,
+    "name": "End Rod",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Hopper Minecart",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Wither Skeleton Skull",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Potion of Night Vision",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 225,
+    "name": "Painting",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 226,
+    "name": "Golden Axe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Melon",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Light Blue Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 229,
+    "name": "Azure Bluet",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 230,
+    "name": "Oxidized Cut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 231,
+    "name": "Bone",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 232,
+    "name": "Iron Ingot",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 233,
+    "name": "Weathelightning Rod",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Dark Prismarine Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 235,
+    "name": "Smooth Sandstone Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 236,
+    "name": "Rabbit",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 237,
+    "name": "Pale Moss Block",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 238,
+    "name": "Splash Potion of Invisibility +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 239,
+    "name": "Deepslate Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 240,
+    "name": "Resin Brick",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 241,
+    "name": "Cracked Deepslate Tiles",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 242,
+    "name": "Hopper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 243,
+    "name": "Enchanted Golden Apple",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 244,
+    "name": "Waxed Copper Chain",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 245,
+    "name": "Cut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 246,
+    "name": "Netherite Scrap",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 247,
+    "name": "Wooden Spear",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 248,
+    "name": "Stripped Hyphae",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 249,
+    "name": "Potion of Harming",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 250,
+    "name": "Waxed Exposed Cut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 251,
+    "name": "Tinted Glass",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 252,
+    "name": "Obsidian",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 253,
+    "name": "Bow",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 254,
+    "name": "Polished Basalt",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 255,
+    "name": "Copper Shovel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 256,
+    "name": "Hay Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 257,
+    "name": "Nether Wart Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 258,
+    "name": "Waxed Exposed Chiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 259,
+    "name": "Waxed Oxidized Cut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 260,
+    "name": "Lingering Potion of Fire Resistance",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 261,
+    "name": "Sentry Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 262,
+    "name": "Lapis Lazuli",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 263,
+    "name": "Stripped Bamboo Block",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 264,
+    "name": "Diamond Hoe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 265,
+    "name": "Orchid",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 266,
+    "name": "Name Tag",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 267,
+    "name": "Paper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 268,
+    "name": "Mojang Banner Pattern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 269,
+    "name": "Splash Potion of Night Vision",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 270,
+    "name": "Splash Potion of Healing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 271,
+    "name": "Chest Minecart",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 272,
+    "name": "Splash Potion of Slow Falling +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 273,
+    "name": "Diamond Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 274,
+    "name": "Button",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 275,
+    "name": "Concrete",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 276,
+    "name": "Clock",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 277,
+    "name": "Decorated Pot",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 278,
+    "name": "Polished Deepslate Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 279,
+    "name": "Waxed Weathecopper Trapdoor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 280,
+    "name": "Wood",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 281,
+    "name": "Golden Sword",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 282,
+    "name": "Nether Wart",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 283,
+    "name": "Lapis Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 284,
+    "name": "Hyphae",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 285,
+    "name": "Oozing",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 286,
+    "name": "Sunflower",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Splash Potion of Leaping +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 288,
+    "name": "Deepslate Tile Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Splash Potion of Healing II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Gray Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 291,
+    "name": "Loom",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 292,
+    "name": "Sulfur",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 293,
+    "name": "Waxed Oxidized Copper Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 294,
+    "name": "Beetroot Soup",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 295,
+    "name": "Clay Ball",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 296,
+    "name": "Packed Ice",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 297,
+    "name": "Waxed Exposed Copper Golem Statue",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 298,
+    "name": "Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 299,
+    "name": "Deepslate Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 300,
+    "name": "Waxed Cut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 301,
+    "name": "Jack O Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 302,
+    "name": "Splash Potion of Harming II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 303,
+    "name": "Mace",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 304,
+    "name": "Stone Button",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 305,
+    "name": "Gunpowder",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 306,
+    "name": "Dried Kelp Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 307,
+    "name": "Potion of Leaping +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 308,
+    "name": "Red Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 309,
+    "name": "Lingering Awkward Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 310,
+    "name": "Mosaic Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 311,
+    "name": "Golden Leggings",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 312,
+    "name": "Oxidized Chiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 313,
+    "name": "Weathecopper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 314,
+    "name": "Lingering Potion of Freezing +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 315,
+    "name": "End Stone",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 316,
+    "name": "Lead",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 317,
+    "name": "Sticky Piston",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 318,
+    "name": "Splash Potion of Regeneration",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 319,
+    "name": "Granite Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 320,
+    "name": "Gravel",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 321,
+    "name": "Mossy Stone Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 322,
+    "name": "Prismarine",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 323,
+    "name": "Cooked Chicken",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 324,
+    "name": "Shelf Mushroom",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 325,
+    "name": "Wet Sponge",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 326,
+    "name": "Polished Blackstone Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 327,
+    "name": "Golden Apple",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 328,
+    "name": "Waxed Weathecopper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 329,
+    "name": "Weathecut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 330,
+    "name": "Long Freezing",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 331,
+    "name": "Splash Water Bottle",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 332,
+    "name": "Sulfur Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 333,
+    "name": "Beacon",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 334,
+    "name": "Copper Nugget",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 335,
+    "name": "Copper Leggings",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 336,
+    "name": "Mushrooms",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 337,
+    "name": "Shelf",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 338,
+    "name": "Orange Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 339,
+    "name": "Green Dye",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 340,
+    "name": "Flint",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 341,
+    "name": "Sugar Cane",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 342,
+    "name": "Sulfur Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 343,
+    "name": "Sulfur Spike",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 344,
+    "name": "Waxed Exposed Copper Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 345,
+    "name": "Stonecutter",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 346,
+    "name": "Wooden Pickaxe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 347,
+    "name": "Oxidized Cut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 348,
+    "name": "Polished Andesite Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 349,
+    "name": "Sulfur Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 350,
+    "name": "Harming",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 351,
+    "name": "Mosaic",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 352,
+    "name": "Chiseled Stone Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 353,
+    "name": "Mossy Stone Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 354,
+    "name": "Iron Sword",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 355,
+    "name": "Polished Blackstone Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 356,
+    "name": "Waxed Copper Bars",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 357,
+    "name": "Leather Leggings",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 358,
+    "name": "Dropper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 359,
+    "name": "Copper Trapdoor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 360,
+    "name": "Phantom Membrane",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 361,
+    "name": "Waxed Weathecopper Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 362,
+    "name": "Wayfinder Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 363,
+    "name": "Strong Strength",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 364,
+    "name": "Long Poison",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 365,
+    "name": "Splash Potion of Freezing +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 366,
+    "name": "Copper Chestplate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 367,
+    "name": "Dirt",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 368,
+    "name": "Weathechiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 369,
+    "name": "Respawn Anchor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 370,
+    "name": "Potion of Harming II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 371,
+    "name": "Potion of Slowness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 372,
+    "name": "Bamboo",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 373,
+    "name": "Waxed Weathelightning Rod",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 374,
+    "name": "Bamboo Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 375,
+    "name": "Cobblestone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 376,
+    "name": "Chiseled Nether Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 377,
+    "name": "Exposed Copper Chest",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 378,
+    "name": "Potion of Poison +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 379,
+    "name": "Torchflower",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 380,
+    "name": "Weathecopper",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 381,
+    "name": "Weathecopper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 382,
+    "name": "Waxed Oxidized Copper Bars",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 383,
+    "name": "Iron Shovel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 384,
+    "name": "Ender Pearl",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 385,
+    "name": "Fire Charge",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 386,
+    "name": "Exposed Lightning Rod",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 387,
+    "name": "Waxed Weathecopper Door",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 388,
+    "name": "Arrow",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 389,
+    "name": "Stripped Stem",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 390,
+    "name": "Wooden Sword",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 391,
+    "name": "Dark Prismarine Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 392,
+    "name": "Cut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 393,
+    "name": "Yellow Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 394,
+    "name": "Diamond Sword",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 395,
+    "name": "Polished Cinnabar",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 396,
+    "name": "Diamond Pickaxe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 397,
+    "name": "Wind Charged",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 398,
+    "name": "Copper Torch",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 399,
+    "name": "Lilac",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 400,
+    "name": "Purpur Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 401,
+    "name": "Exposed Copper Golem Statue",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 402,
+    "name": "Fishing Rod",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 403,
+    "name": "Piston",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 404,
+    "name": "Crossbow",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 405,
+    "name": "Splash Mundane Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 406,
+    "name": "Lightning Rod",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 407,
+    "name": "Polished Blackstone Pressure Plate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 408,
+    "name": "Lingering Potion of Slow Falling +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 409,
+    "name": "Dark Prismarine",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 410,
+    "name": "Lingering Potion of the Turtle Master +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 411,
+    "name": "Firework Rocket",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 412,
+    "name": "Quartz Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 413,
+    "name": "Barrel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 414,
+    "name": "Polished Blackstone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 415,
+    "name": "Smooth Basalt",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 416,
+    "name": "Lingering Potion of Swiftness II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 417,
+    "name": "Stone Pickaxe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 418,
+    "name": "Cut Sandstone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 419,
+    "name": "Iron Leggings",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 420,
+    "name": "Activator Rail",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 421,
+    "name": "Leather Chestplate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 422,
+    "name": "Honey Bottle",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 423,
+    "name": "Cactus Flower",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 424,
+    "name": "Bed",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 425,
+    "name": "Ice",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 426,
+    "name": "Quartz Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 427,
+    "name": "Potion of Healing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 428,
+    "name": "Potion of Slowness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 429,
+    "name": "Basalt",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 430,
+    "name": "Logs That Burn",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 431,
+    "name": "Strong Swiftness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 432,
+    "name": "Cobblestone Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 433,
+    "name": "Sulfur Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 434,
+    "name": "Raft",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 435,
+    "name": "Vine",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 436,
+    "name": "Lingering Potion of Harming",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 437,
+    "name": "Water Breathing",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 438,
+    "name": "Lily Of The Valley",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 439,
+    "name": "Pale Moss Carpet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 440,
+    "name": "Potion of Swiftness II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 441,
+    "name": "Honey Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 442,
+    "name": "Waxed Exposed Copper Trapdoor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 443,
+    "name": "Splash Potion of Invisibility",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 444,
+    "name": "Compass",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 445,
+    "name": "Blackstone",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 446,
+    "name": "Long Regeneration",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 447,
+    "name": "Copper Ingot",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 448,
+    "name": "Bundle",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 449,
+    "name": "Redstone",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 450,
+    "name": "Pitcher Plant",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 451,
+    "name": "Wooden Shovel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 452,
+    "name": "Chiseled Polished Blackstone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 453,
+    "name": "Open Eyeblossom",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 454,
+    "name": "Wool Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 455,
+    "name": "Hanging Sign",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 456,
+    "name": "Fire Resistance",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 457,
+    "name": "Waxed Exposed Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 458,
+    "name": "Waxed Lightning Rod",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 459,
+    "name": "Tuff Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 460,
+    "name": "Polished Sulfur Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 461,
+    "name": "Stone Axe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 462,
+    "name": "Cocoa Beans",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 463,
+    "name": "Long Night Vision",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 464,
+    "name": "Splash Potion of Poison +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 465,
+    "name": "Lingering Potion of Strength",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 466,
+    "name": "Prismarine Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 467,
+    "name": "Tide Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 468,
+    "name": "Deepslate Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 469,
+    "name": "Awkward Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 470,
+    "name": "Observer",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 471,
+    "name": "Potion of Slowness II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 472,
+    "name": "Blaze Powder",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 473,
+    "name": "Potion of Healing II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 474,
+    "name": "Raw Gold Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 475,
+    "name": "Waxed Copper Golem Statue",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 476,
+    "name": "Weathecopper Trapdoor",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 477,
+    "name": "Deepslate Tile Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 478,
+    "name": "Oxeye Daisy",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 479,
+    "name": "Bamboo Blocks",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 480,
+    "name": "Potion of Invisibility +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 481,
+    "name": "Note Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 482,
+    "name": "Copper Boots",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 483,
+    "name": "Raw Copper Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 484,
+    "name": "Dune Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 485,
+    "name": "Polished Cinnabar Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 486,
+    "name": "Soul Fire Base Blocks",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 487,
+    "name": "Coals",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 488,
+    "name": "Blackstone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 489,
+    "name": "Copper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 490,
+    "name": "Fence",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 491,
+    "name": "Blaze Rod",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 492,
+    "name": "Concrete Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 493,
+    "name": "Spyglass",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 494,
+    "name": "Polished Granite",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 495,
+    "name": "Exposed Copper Trapdoor",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 496,
+    "name": "Ward Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 497,
+    "name": "Slime Ball",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 498,
+    "name": "Cinnabar Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 499,
+    "name": "Amethyst Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 500,
+    "name": "Splash Potion of Strength",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 501,
+    "name": "Bone Meal",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 502,
+    "name": "Milk Bucket",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 503,
+    "name": "Polished Sulfur",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 504,
+    "name": "Waxed Oxidized Copper Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 505,
+    "name": "Potion of Leaping II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 506,
+    "name": "Mossy Stone Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 507,
+    "name": "Waxed Oxidized Copper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 508,
+    "name": "Roots",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 509,
+    "name": "Lingering Potion of Swiftness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 510,
+    "name": "Ender Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 511,
+    "name": "Lingering Potion of Slowness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 512,
+    "name": "Nether Brick",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 513,
+    "name": "Mundane Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 514,
+    "name": "Furnace",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 515,
+    "name": "Heart Of The Sea",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 516,
+    "name": "Copper Hoe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 517,
+    "name": "Silence Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 518,
+    "name": "Beetroot",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 519,
+    "name": "Exposed Cut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 520,
+    "name": "Beef",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 521,
+    "name": "Item Frame",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 522,
+    "name": "Waxed Exposed Cut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 523,
+    "name": "Golden Boots",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 524,
+    "name": "Prismarine Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 525,
+    "name": "Netherite Ingot",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 526,
+    "name": "Potion of Freezing +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 527,
+    "name": "Quartz",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 528,
+    "name": "Tuff Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 529,
+    "name": "Raiser Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 530,
+    "name": "Resin Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 531,
+    "name": "Andesite Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 532,
+    "name": "Stripped Log",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 533,
+    "name": "Splash Potion of Wind Charged",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 534,
+    "name": "Blue Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 535,
+    "name": "Coarse Dirt",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 536,
+    "name": "Waxed Copper Trapdoor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 537,
+    "name": "Weathecut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 538,
+    "name": "Exposed Cut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 539,
+    "name": "Copper Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 540,
+    "name": "Eye Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 541,
+    "name": "Lingering Potion of the Turtle Master II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 542,
+    "name": "Terracotta",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 543,
+    "name": "Potent Sulfur",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 544,
+    "name": "Cracked Nether Bricks",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 545,
+    "name": "Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 546,
+    "name": "Waxed Weathecopper Golem Statue",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 547,
+    "name": "Carrot",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 548,
+    "name": "Honeycomb",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 549,
+    "name": "Moss Carpet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 550,
+    "name": "Spire Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 551,
+    "name": "Waxed Weathecut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 552,
+    "name": "Apple",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 553,
+    "name": "Mosaic Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 554,
+    "name": "Glass Pane",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 555,
+    "name": "Awkward",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 556,
+    "name": "Lingering Potion of Poison +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 557,
+    "name": "Splash Potion of Harming",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 558,
+    "name": "Potion of Invisibility",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 559,
+    "name": "Lingering Potion of Harming II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 560,
+    "name": "Polished Blackstone Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 561,
+    "name": "Lingering Potion of Leaping",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 562,
+    "name": "Diamond Axe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 563,
+    "name": "Potion of Slow Falling",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 564,
+    "name": "Copper Sword",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 565,
+    "name": "Chiseled Tuff Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 566,
+    "name": "Repeater",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 567,
+    "name": "Chest Boat",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 568,
+    "name": "Stained Glass Pane",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 569,
+    "name": "Golden Shovel",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 570,
+    "name": "Wooden Axe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 571,
+    "name": "Spectral Arrow",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 572,
+    "name": "Lingering Potion of Freezing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 573,
+    "name": "Leather Helmet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 574,
+    "name": "Andesite Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 575,
+    "name": "Thick Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 576,
+    "name": "Strong Poison",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 577,
+    "name": "Black Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 578,
+    "name": "Dispenser",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 579,
+    "name": "Weathecut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 580,
+    "name": "Stone",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 581,
+    "name": "Long Leaping",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 582,
+    "name": "Cookie",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 583,
+    "name": "Tuff Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 584,
+    "name": "Light Weighted Pressure Plate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 585,
+    "name": "Cinnabar Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 586,
+    "name": "Cooked Rabbit",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 587,
+    "name": "Magma Cream",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 588,
+    "name": "Lingering Potion of Night Vision +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 589,
+    "name": "Shaper Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 590,
+    "name": "Campfire",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 591,
+    "name": "Long Slow Falling",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 592,
+    "name": "Door",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 593,
+    "name": "Polished Cinnabar Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 594,
+    "name": "Waxed Exposed Cut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 595,
+    "name": "Polished Sulfur Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 596,
+    "name": "Copper Pickaxe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 597,
+    "name": "Strong Regeneration",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 598,
+    "name": "Golden Pickaxe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 599,
+    "name": "Potion of Regeneration +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 600,
+    "name": "Cooked Cod",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 601,
+    "name": "Potion of Freezing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 602,
+    "name": "Iron Axe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 603,
+    "name": "Recovery Compass",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 604,
+    "name": "Sea Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 605,
+    "name": "Diorite",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 606,
+    "name": "Magma Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 607,
+    "name": "Oxidized Copper Door",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 608,
+    "name": "Deepslate Redstone Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 609,
+    "name": "Potion of Fire Resistance",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 610,
+    "name": "Sign",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 611,
+    "name": "Waxed Copper Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 612,
+    "name": "Shulker Shell",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 613,
+    "name": "Waxed Oxidized Copper Door",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 614,
+    "name": "Copper Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 615,
+    "name": "Cauldron",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 616,
+    "name": "Turtle Helmet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 617,
+    "name": "Sulfur Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 618,
+    "name": "Mud Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 619,
+    "name": "Crafter",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 620,
+    "name": "Stained Glass",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 621,
+    "name": "Deepslate Tiles",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 622,
+    "name": "Strong Slowness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 623,
+    "name": "Netherite Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 624,
+    "name": "Stone Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 625,
+    "name": "Waxed Weathecut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 626,
+    "name": "Cracked Deepslate Bricks",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 627,
+    "name": "Fungus",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 628,
+    "name": "Splash Potion of Slowness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 629,
+    "name": "Dragon's Breath",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 630,
+    "name": "Mossy Cobblestone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 631,
+    "name": "Poison",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 632,
+    "name": "Waxed Exposed Copper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 633,
+    "name": "Cobbled Deepslate Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 634,
+    "name": "Carpet",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 635,
+    "name": "Melon Slice",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 636,
+    "name": "Smithing Table",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 637,
+    "name": "Wither Rose",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 638,
+    "name": "Creeper Head",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 639,
+    "name": "Strong Leaping",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 640,
+    "name": "Lingering Potion of Weakness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 641,
+    "name": "Thick",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 642,
+    "name": "Deepslate Emerald Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 643,
+    "name": "Potion of Strength",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 644,
+    "name": "Nether Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 645,
+    "name": "Iron Chestplate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 646,
+    "name": "Weathecopper Bars",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 647,
+    "name": "Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 648,
+    "name": "Cooked Porkchop",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 649,
+    "name": "Long Fire Resistance",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 650,
+    "name": "Host Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 651,
+    "name": "Bordure Indented Banner Pattern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 652,
+    "name": "Smelts To Glass",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 653,
+    "name": "Purpur Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 654,
+    "name": "Chicken",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 655,
+    "name": "Diamond Boots",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 656,
+    "name": "Sandstone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 657,
+    "name": "Harness",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 658,
+    "name": "Iron Nugget",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 659,
+    "name": "Waxed Exposed Copper Bars",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 660,
+    "name": "Weaving",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 661,
+    "name": "Waxed Weathecopper Bars",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 662,
+    "name": "Petals",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 663,
+    "name": "Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 664,
+    "name": "Mud Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 665,
+    "name": "Exposed Copper Door",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 666,
+    "name": "Stem",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 667,
+    "name": "Wooden Slabs",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 668,
+    "name": "Light Gray Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 669,
+    "name": "Waxed Weathecopper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 670,
+    "name": "Lingering Potion of Leaping II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 671,
+    "name": "Flow Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 672,
+    "name": "Stick",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 673,
+    "name": "Water Bottle",
+    "sources": [
+      "Brewing",
+      "Filling"
+    ]
+  },
+  {
+    "id": 674,
+    "name": "Jukebox",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 675,
+    "name": "Cooked Beef",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 676,
+    "name": "Cracked Polished Blackstone Bricks",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 677,
+    "name": "Lingering Potion of Slow Falling",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 678,
+    "name": "Tuff",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 679,
+    "name": "Flower Pot",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 680,
+    "name": "Exposed Copper Bars",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 681,
+    "name": "Waxed Weathecut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 682,
+    "name": "Gold Ingot",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 683,
+    "name": "Long Invisibility",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 684,
+    "name": "Quartz Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 685,
+    "name": "Granite Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 686,
+    "name": "Cinnabar",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 687,
+    "name": "Resin Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 688,
+    "name": "Composter",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 689,
+    "name": "Lingering Potion of Invisibility +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 690,
+    "name": "Copper Door",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 691,
+    "name": "Splash Potion of Weaving",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 692,
+    "name": "Lingering Water Bottle",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 693,
+    "name": "Soul Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 694,
+    "name": "Turtle Master",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 695,
+    "name": "Waxed Exposed Lightning Rod",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 696,
+    "name": "Splash Potion of Freezing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 697,
+    "name": "Grindstone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 698,
+    "name": "Exposed Chiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 699,
+    "name": "Blackstone Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 700,
+    "name": "Weakness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 701,
+    "name": "String",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 702,
+    "name": "Target",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 703,
+    "name": "Raw Gold",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 704,
+    "name": "Lingering Potion of Weakness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 705,
+    "name": "Splash Potion of Poison II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 706,
+    "name": "Feather",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 707,
+    "name": "Trapdoor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 708,
+    "name": "Comparator",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 709,
+    "name": "Iron Trapdoor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 710,
+    "name": "Polished Blackstone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 711,
+    "name": "Andesite",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 712,
+    "name": "Ink Sac",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 713,
+    "name": "Shears",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 714,
+    "name": "Waxed Oxidized Copper Trapdoor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 715,
+    "name": "Chest Raft",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 716,
+    "name": "Chiseled Resin Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 717,
+    "name": "Cake",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 718,
+    "name": "Skull Banner Pattern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 719,
+    "name": "Writable Book",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 720,
+    "name": "Tuff Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 721,
+    "name": "Potion of Strength +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 722,
+    "name": "Stripped Wood",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 723,
+    "name": "Stone Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 724,
+    "name": "Concrete Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 725,
+    "name": "Tulip",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 726,
+    "name": "Polished Diorite Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 727,
+    "name": "Smooth Quartz Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 728,
+    "name": "Creeper Banner Pattern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 729,
+    "name": "Polished Blackstone Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 730,
+    "name": "Deepslate Gold Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 731,
+    "name": "Vex Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 732,
+    "name": "Stone Hoe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 733,
+    "name": "Cobbled Deepslate Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 734,
+    "name": "Raw Iron",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 735,
+    "name": "Lingering Potion of Swiftness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 736,
+    "name": "Honeycomb Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 737,
+    "name": "Waxed Weathecopper Lantern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 738,
+    "name": "Lingering Potion of Healing II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 739,
+    "name": "Exposed Copper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 740,
+    "name": "Scaffolding",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 741,
+    "name": "Brown Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 742,
+    "name": "Splash Thick Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 743,
+    "name": "Cooked Mutton",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 744,
+    "name": "Healing",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 745,
+    "name": "Tnt Minecart",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 746,
+    "name": "Lingering Potion of Slowness +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 747,
+    "name": "Mud",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 748,
+    "name": "Potion of Swiftness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 749,
+    "name": "Lingering Potion of Weaving",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 750,
+    "name": "Polished Andesite Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 751,
+    "name": "Polished Tuff Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 752,
+    "name": "Cinnabar Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 753,
+    "name": "Coal",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 754,
+    "name": "Waxed Exposed Copper Door",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 755,
+    "name": "Ancient Debris",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 756,
+    "name": "Quartz Pillar",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 757,
+    "name": "Polished Granite Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 758,
+    "name": "Smoker",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 759,
+    "name": "Waxed Copper Bulb",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 760,
+    "name": "Exposed Copper Chain",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 761,
+    "name": "Breeze Rod",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 762,
+    "name": "Copper Golem Statue",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 763,
+    "name": "Waxed Weathecopper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 764,
+    "name": "Splash Potion of Strength +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 765,
+    "name": "End Stone Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 766,
+    "name": "Nautilus Shell",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 767,
+    "name": "Long Slowness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 768,
+    "name": "Cinnabar Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 769,
+    "name": "Diorite Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 770,
+    "name": "Rose Bush",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 771,
+    "name": "Potion of Wind Charged",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 772,
+    "name": "Sea Pickle",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 773,
+    "name": "Lime Dye",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 774,
+    "name": "Splash Potion of Regeneration II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 775,
+    "name": "Crafting Table",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 776,
+    "name": "Sulfur Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 777,
+    "name": "Waxed Copper Door",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 778,
+    "name": "Polished Diorite Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 779,
+    "name": "Leaves",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 780,
+    "name": "Bread",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 781,
+    "name": "Dried Kelp",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 782,
+    "name": "Bone Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 783,
+    "name": "Sculk Sensor",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 784,
+    "name": "Oxidized Copper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 785,
+    "name": "Tnt",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 786,
+    "name": "Iron Pickaxe",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 787,
+    "name": "Lingering Potion of Healing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 788,
+    "name": "Potion of Regeneration",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 789,
+    "name": "Rabbit Stew",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 790,
+    "name": "Bucket",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 791,
+    "name": "Raw Iron Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 792,
+    "name": "Cushion",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 793,
+    "name": "Waxed Oxidized Cut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 794,
+    "name": "Potion of Regeneration II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 795,
+    "name": "Wild Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 796,
+    "name": "Splash Potion of Swiftness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 797,
+    "name": "Resin Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 798,
+    "name": "Enchanting Table",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 799,
+    "name": "Polished Tuff",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 800,
+    "name": "Waxed Copper Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 801,
+    "name": "Iron Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 802,
+    "name": "Splash Potion of the Turtle Master",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 803,
+    "name": "Long Weakness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 804,
+    "name": "Minecart",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 805,
+    "name": "Glowstone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 806,
+    "name": "Soul Sand",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 807,
+    "name": "Cod",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 808,
+    "name": "Deepslate Lapis Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 809,
+    "name": "Diamond Spear",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 810,
+    "name": "Golden Chestplate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 811,
+    "name": "Splash Potion of the Turtle Master II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 812,
+    "name": "Logs",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 813,
+    "name": "Splash Potion of Weakness",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 814,
+    "name": "Netherrack",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 815,
+    "name": "Waxed Cut Copper Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 816,
+    "name": "Glowstone Dust",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 817,
+    "name": "Fermented Spider Eye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 818,
+    "name": "Cartography Table",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 819,
+    "name": "Gold Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 820,
+    "name": "Polished Cinnabar Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 821,
+    "name": "Crying Obsidian",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 822,
+    "name": "Pumpkin",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 823,
+    "name": "Invisibility",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 824,
+    "name": "Splash Potion of Slowness II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 825,
+    "name": "Wind Charge",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 826,
+    "name": "Chiseled Bookshelf",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 827,
+    "name": "Nether Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 828,
+    "name": "Splash Potion of Swiftness II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 829,
+    "name": "Armadillo Scute",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 830,
+    "name": "Cornflower",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 831,
+    "name": "Field Masoned Banner Pattern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 832,
+    "name": "Coast Armor Trim Smithing Template",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 833,
+    "name": "Polished Tuff Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 834,
+    "name": "Shield",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 835,
+    "name": "Andesite Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 836,
+    "name": "Polished Granite Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 837,
+    "name": "Straw Bed",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 838,
+    "name": "Sponge",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 839,
+    "name": "Waxed Weathechiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 840,
+    "name": "Weathecopper Chest",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 841,
+    "name": "Splash Awkward Potion",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 842,
+    "name": "Mutton",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 843,
+    "name": "Stone Spear",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 844,
+    "name": "Polished Deepslate Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 845,
+    "name": "Potion of Fire Resistance +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 846,
+    "name": "Lingering Potion of the Turtle Master",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 847,
+    "name": "Potion of Night Vision +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 848,
+    "name": "Cut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 849,
+    "name": "Smooth Stone",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 850,
+    "name": "Ender Eye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 851,
+    "name": "Iron Spear",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 852,
+    "name": "Wolf Armor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 853,
+    "name": "Boat",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 854,
+    "name": "Oxidized Copper Bars",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 855,
+    "name": "Coal Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 856,
+    "name": "Brush",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 857,
+    "name": "Chiseled Sulfur",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 858,
+    "name": "Cooked Salmon",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 859,
+    "name": "Mushroom",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 860,
+    "name": "Flower Banner Pattern",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 861,
+    "name": "Beehive",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 862,
+    "name": "Oxidized Lightning Rod",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 863,
+    "name": "Splash Potion of the Turtle Master +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 864,
+    "name": "Stone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 865,
+    "name": "Cactus",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 866,
+    "name": "Polished Tuff Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 867,
+    "name": "Cinnabar Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 868,
+    "name": "Oxidized Copper Chain",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 869,
+    "name": "Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 870,
+    "name": "Emerald Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 871,
+    "name": "Prismarine Crystals",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 872,
+    "name": "Carved Pumpkin",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 873,
+    "name": "Bowl",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 874,
+    "name": "Conduit",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 875,
+    "name": "Mud Brick Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 876,
+    "name": "Leaping",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 877,
+    "name": "Potion of Poison II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 878,
+    "name": "Oxidized Copper",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 879,
+    "name": "Snow Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 880,
+    "name": "Polished Blackstone Brick Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 881,
+    "name": "Diamond",
+    "sources": [
+      "Crafting",
+      "Smelting"
+    ]
+  },
+  {
+    "id": 882,
+    "name": "Lodestone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 883,
+    "name": "Waxed Exposed Copper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 884,
+    "name": "Metal Nuggets",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 885,
+    "name": "Pumpkin Pie",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 886,
+    "name": "Potion of Poison",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 887,
+    "name": "Snow",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 888,
+    "name": "Splash Potion of Regeneration +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 889,
+    "name": "Waxed Copper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 890,
+    "name": "Splash Potion of Slow Falling",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 891,
+    "name": "Copper Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 892,
+    "name": "Lingering Potion of Regeneration +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 893,
+    "name": "Deepslate",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 894,
+    "name": "Splash Potion of Leaping II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 895,
+    "name": "Slowness",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 896,
+    "name": "Mossy Cobblestone Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 897,
+    "name": "Chiseled Tuff",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 898,
+    "name": "Sugar",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 899,
+    "name": "Prismarine Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 900,
+    "name": "Popped Chorus Fruit",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 901,
+    "name": "White Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 902,
+    "name": "Potion of Infested",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 903,
+    "name": "Trapped Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 904,
+    "name": "Fungus On A Stick",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 905,
+    "name": "Infested",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 906,
+    "name": "Glass",
+    "sources": [
+      "Smelting"
+    ]
+  },
+  {
+    "id": 907,
+    "name": "Splash Potion of Leaping",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 908,
+    "name": "Pressure Plate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 909,
+    "name": "Lingering Potion of Poison",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 910,
+    "name": "Lingering Potion of Regeneration",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 911,
+    "name": "Waxed Oxidized Chiseled Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 912,
+    "name": "Prismarine Bricks",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 913,
+    "name": "Fletching Table",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 914,
+    "name": "Splash Potion of Night Vision +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 915,
+    "name": "Heavy Core",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 916,
+    "name": "Smooth Stone Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 917,
+    "name": "Waxed Oxidized Lightning Rod",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 918,
+    "name": "Cinnabar Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 919,
+    "name": "Potion of Strength II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 920,
+    "name": "Sulfur Wall",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 921,
+    "name": "Waxed Cut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 922,
+    "name": "Lingering Potion of Invisibility",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 923,
+    "name": "Deepslate Diamond Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 924,
+    "name": "Calibrated Sculk Sensor",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 925,
+    "name": "Porkchop",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 926,
+    "name": "Dried Ghast",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 927,
+    "name": "Rail",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 928,
+    "name": "Tuff Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 929,
+    "name": "Slime Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 930,
+    "name": "Waxed Oxidized Cut Copper Slab",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 931,
+    "name": "Clay",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 932,
+    "name": "Stems",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 933,
+    "name": "Oxidized Cut Copper",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 934,
+    "name": "Exposed Copper",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 935,
+    "name": "Regeneration",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 936,
+    "name": "Copper Spear",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 937,
+    "name": "Chest",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 938,
+    "name": "Lingering Potion of Slowness II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 939,
+    "name": "Lingering Potion of Regeneration II",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 940,
+    "name": "Pink Dye",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 941,
+    "name": "Chiseled Sandstone",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 942,
+    "name": "Peony",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 943,
+    "name": "Nether Brick Stairs",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 944,
+    "name": "Muddy Roots",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 945,
+    "name": "Spider Eye",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 946,
+    "name": "Lingering Potion of Fire Resistance +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 947,
+    "name": "Turtle Scute",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 948,
+    "name": "Coal Ore",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 949,
+    "name": "Dragon Breath",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 950,
+    "name": "Strong Harming",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 951,
+    "name": "Purpur Pillar",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 952,
+    "name": "Ice Ball",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 953,
+    "name": "Splash Potion of Oozing",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 954,
+    "name": "Purpur Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 955,
+    "name": "Resin Block",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 956,
+    "name": "Iron Bars",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 957,
+    "name": "Potion of the Turtle Master +",
+    "sources": [
+      "Brewing"
+    ]
+  },
+  {
+    "id": 958,
+    "name": "Diamond Leggings",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 959,
+    "name": "Mushroom Stew",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 960,
+    "name": "Strength",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 961,
+    "name": "Stone Sword",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 962,
+    "name": "Golden Carrot",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 963,
+    "name": "Waxed Oxidized Copper Grate",
+    "sources": [
+      "Crafting"
+    ]
+  },
+  {
+    "id": 964,
+    "name": "Glow Ink Sac",
+    "sources": [
+      "Gathering"
+    ]
+  },
+  {
+    "id": 965,
+    "name": "Iron Hoe",
+    "sources": [
+      "Crafting"
+    ]
+  }
+]

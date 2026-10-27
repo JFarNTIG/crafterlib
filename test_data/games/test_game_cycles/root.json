@@ -1,0 +1,10 @@
+{
+    "game": "Cycles test",
+    "item_files": [
+        "items.json"
+    ],
+    "recipe_files": [
+        "recipes.json"
+    ],
+    "crafting_grid_files": []
+}
