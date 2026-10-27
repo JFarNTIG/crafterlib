@@ -214,13 +214,13 @@ def test_shared_crafting_dependency_with_leftovers():
     assert plan.ingredients == {
         "Logs": 2,
         "Planks": 8,
-        "Sticks": 4,
+        "Stick": 4,
         "Fence": 3,
     }
 
     assert plan.leftovers == {
         "Planks": 2,
-        "Sticks": 2,
+        "Stick": 2,
         "Fence": 2,
     }
 
